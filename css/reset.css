@@ -1,0 +1,50 @@
+/* Restablecimiento básico de márgenes, padding y box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    font: inherit;
+}
+
+/* Ajustes de elementos multimedia */
+img, video, svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Ajustes del cuerpo */
+body {
+    margin: 0;
+    min-height: 100dvh;
+}
+
+/* Restablecimiento de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Restablecimiento de elementos de formulario */
+button, input, textarea, select {
+    font: inherit;
+    margin: 0;
+}
+
+/* Restablecimiento de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ajustes de encabezados */
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* Ajustes de párrafos */
+p {
+    text-wrap: pretty;
+}
