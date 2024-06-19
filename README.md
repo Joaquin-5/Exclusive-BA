@@ -14,3 +14,4 @@
   ```sh
   cd Exclusive BA
   ```
+3. Abrir el archivo index.html
