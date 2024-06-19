@@ -29,8 +29,8 @@ Exclusive-BA/
 │   ├── style.css
 │   └── reset.css
 ├── img/
-│   └── exclusivebalogowithoutbg.png
-│   └── exclusivebalogowithbg.png
+│   └── exclusivebalogowithoutbg.jpg
+│   └── exclusivebalogowithbg.jpeg
 ├── js/
 │   └── main.js
 ├── index.html
