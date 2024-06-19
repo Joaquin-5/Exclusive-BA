@@ -18,4 +18,4 @@
 3. Abrir el archivo index.html
 
 ## Uso
-La página ofrece información sobre acerca de tours. Puedes navegar a través de las secciones usando el menú de navegación en la parte superior de la página o en el footer
+La página ofrece información acerca de tours. Puedes navegar a través de las secciones usando el menú de navegación en la parte superior de la página o en el footer
