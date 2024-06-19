@@ -4,6 +4,7 @@
 
 ## Tabla de contenidos
 1. [Instalación](#instalación)
+2. [Uso](#uso)
 
 ## Instalación
 1. Clonar el repositorio:
@@ -15,3 +16,6 @@
   cd Exclusive BA
   ```
 3. Abrir el archivo index.html
+
+## Uso
+La página ofrece información sobre información acerca  de tours. Puedes navegar a través de las secciones usando el menú de navegación en la parte superior de la página.
