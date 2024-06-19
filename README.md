@@ -6,4 +6,5 @@
 1. [Instalación](#instalación)
 
 ## Instalación
-1. Clonar el repositorio
+1. Clonar el repositorio con el siguiente comando de git: git clone https://github.com/tu-usuario/tu-proyecto.git
+2. 
