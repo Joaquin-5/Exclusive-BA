@@ -5,6 +5,7 @@
 ## Tabla de contenidos
 1. [Instalación](#instalación)
 2. [Uso](#uso)
+3. [Estructura del Proyecto](#estructura-del-proyecto)
 
 ## Instalación
 1. Clonar el repositorio:
@@ -19,3 +20,15 @@
 
 ## Uso
 La página ofrece información acerca de tours. Puedes navegar a través de las secciones usando el menú de navegación en la parte superior de la página o en el footer
+
+## Estructura del proyecto
+
+Exclusive BA/
+├── css/
+│   └── styles.css
+├── images/
+│   └── logo.png
+├── js/
+│   └── script.js
+├── index.html
+└── README.md
