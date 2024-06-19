@@ -10,3 +10,7 @@
   ```sh
   git clone https://github.com/Joaquin-5/Exclusive-BA.git
   ```
+2. Acceder al directorio del proyecto:
+   ```sh
+    cd tu-proyecto
+    ```
