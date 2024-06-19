@@ -26,10 +26,11 @@ La página ofrece información acerca de tours. Puedes navegar a través de las 
 ```plaintext
 Exclusive-BA/
 ├── css/
-│   └── styles.css
-├── images/
+│   ├── style.css
+│   └── reset.css
+├── img/
 │   └── logo.png
 ├── js/
-│   └── script.js
+│   └── main.js
 ├── index.html
 └── README.md
