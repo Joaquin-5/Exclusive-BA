@@ -6,5 +6,5 @@
 1. [Instalación](#instalación)
 
 ## Instalación
-1. Clonar el repositorio con el siguiente comando de git y la respectiva URL: [git clone https://github.com/tu-usuario/tu-proyecto.git](https://github.com/Joaquin-5/Exclusive-BA.git)
+1. Clonar el repositorio con el siguiente comando git y la respectiva URL: 
 2. 
