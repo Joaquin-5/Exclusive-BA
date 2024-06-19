@@ -23,7 +23,8 @@ La página ofrece información acerca de tours. Puedes navegar a través de las 
 
 ## Estructura del proyecto
 
-Exclusive BA/
+```plaintext
+Exclusive-BA/
 ├── css/
 │   └── styles.css
 ├── images/
