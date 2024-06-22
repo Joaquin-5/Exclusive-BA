@@ -31,6 +31,7 @@ Exclusive-BA/
 ├── img/
 │   └── exclusivebalogowithoutbg.jpg
 │   └── exclusivebalogowithbg.jpeg
+│   └── obelisco.jpg
 ├── js/
 │   └── main.js
 ├── index.html
