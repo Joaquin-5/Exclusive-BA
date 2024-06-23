@@ -11,10 +11,6 @@ body {
   margin: 0;
 }
 
-.logo {
-  width: 100px;
-}
-
 .header__top {
   display: flex;
   justify-content: space-around;
@@ -24,21 +20,90 @@ body {
   display: inline-block;
 }
 
+.logo {
+  width: 100px;
+}
+
 .header__menu-container {
   display: none;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .header__menu-toggle {
   background: none;
   border: none;
+  font-size: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  height: 50%;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.tours_btn {
+  background-color: #84ceff;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.6s;
+}
+
+.tours_btn:hover {
+  background-color: #0093f5;
+  color: #ffffff;
 }
 
 @media (width >= 768px) {
   .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 
   .header__top {
@@ -59,6 +124,7 @@ body {
   .header__nav-list {
     width: 500px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
