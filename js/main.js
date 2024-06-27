@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.querySelector(".header__menu-container");
   const hamburguerMenu = document.querySelector(".header__menu-toggle");
 
-  // Toggle el div con la clase header__menu-container 
+  // Toggle el div con la clase header__menu-container
   const adjustMenuContainer = () => {
     if (window.innerWidth >= 768) {
       while (menuContainer.firstChild) {
@@ -28,10 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle menú hamburguesa
   hamburguerMenu.addEventListener("click", () => {
-    if (menuContainer.style.display === "none")
+    if (
+      menuContainer.style.display === "none" ||
+      menuContainer.style.display === ""
+    )
       menuContainer.style.display = "flex";
     else menuContainer.style.display = "none";
   });
-
-  
 });

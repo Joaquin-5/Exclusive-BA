@@ -1,6 +1,5 @@
 /** 
 ** Trabajando con mobile first  
-* TODO: Importar fuente
 */
 body {
   background-image: url("../img/obelisco.jpeg");
@@ -24,7 +23,7 @@ body {
 }
 
 .logo {
-  width: 300px;
+  width: 250px;
 }
 
 .header__menu-container {
@@ -112,8 +111,8 @@ h3 {
     height: 100px;
   }
 
-  .header__top {
-    display: inline-block;
+  .logo {
+    width: 300px;
   }
 
   .header__menu-toggle {
