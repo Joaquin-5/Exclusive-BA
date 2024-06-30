@@ -2,13 +2,16 @@
 ** Trabajando con mobile first  
 */
 body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body.index-page {
   background-image: url("../img/obelisco.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 .header {
