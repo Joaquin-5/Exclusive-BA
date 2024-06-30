@@ -1,15 +1,31 @@
 {
-  "nav": {
+  "header": {
+    "title": "Passeios Personalizados",
+    "subtitle": "Descubra Buenos Aires do seu jeito!",
+    "description": "A melhor maneira de explorar a capital da Argentina",
+    "button": "Ver Passeios"
+  },
+  "links": {
     "home": "Início",
     "about": "Sobre nós",
     "tours": "Passeios",
     "contact": "Contato",
     "reviews": "Avaliações"
   },
-  "main": {
-    "title": "Passeios Personalizados",
-    "subtitle": "Descubra Buenos Aires ao seu modo!",
-    "description": "A melhor forma de explorar a capital da Argentina",
-    "button": "Ver Passeios"
+  "footer": {
+    "categories": {
+      "title": "Categorias"
+    },
+    "contact": {
+      "title": "Contato",
+      "phone": "+5491162535343",
+      "email": "exclusivebuenosaires@gmail.com",
+      "instagram": "@exclusiveba_"
+    },
+    "questions": {
+      "title": "Perguntas",
+      "subtitle": "Inscreva-se para não perder nenhuma novidade!"
+    },
+    "copyright": "© {year} Exclusive BA. Todos os direitos reservados."
   }
 }

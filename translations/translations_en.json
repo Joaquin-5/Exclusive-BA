@@ -1,15 +1,31 @@
 {
-  "nav": {
-    "home": "Home",
-    "about": "About Us",
-    "tours": "Tours",
-    "contact": "Contact",
-    "reviews": "Reviews"
-  },
-  "main": {
+  "header": {
     "title": "Customized Tours",
     "subtitle": "Discover Buenos Aires on your terms!",
     "description": "The best way to explore Argentina's capital",
     "button": "View Tours"
+  },
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "tours": "Tours",
+    "contact": "Contact",
+    "reviews": "Reviews"
+  },
+  "footer": {
+    "categories": {
+      "title": "Categories"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+5491162535343",
+      "email": "exclusivebuenosaires@gmail.com",
+      "instagram": "@exclusiveba_"
+    },
+    "questions": {
+      "title": "Questions",
+      "subtitle": "Subscribe to stay updated on the latest news!"
+    },
+    "copyright": "© {year} Exclusive BA. All rights reserved."
   }
 }

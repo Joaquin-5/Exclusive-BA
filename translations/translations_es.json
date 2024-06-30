@@ -1,15 +1,31 @@
 {
-  "nav": {
+  "header": {
+    "title": "Tours Personalizados",
+    "subtitle": "¡Conoce Buenos Aires a tu medida!",
+    "description": "La mejor forma de recorrer la capital Argentina",
+    "button": "Ver Tours"
+  },
+  "links": {
     "home": "Inicio",
     "about": "Nosotros",
     "tours": "Tours",
     "contact": "Contacto",
     "reviews": "Reseñas"
   },
-  "main": {
-    "title": "Tours Personalizados",
-    "subtitle": "¡Conoce Buenos Aires a tu medida!",
-    "description": "La mejor forma de recorrer la capital Argentina",
-    "button": "Ver Tours"
+  "footer": {
+    "categories": {
+      "title": "Categorías"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+5491162535343",
+      "email": "exclusivebuenosaires@gmail.com",
+      "instagram": "@exclusiveba_"
+    },
+    "questions": {
+      "title": "Preguntas",
+      "subtitle": "¡Suscríbete para no perderte ninguna novedad!"
+    },
+    "copyright": "© {year} Exclusive BA. Todos los derechos reservados."
   }
 }
