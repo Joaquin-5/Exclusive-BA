@@ -24,32 +24,150 @@
   <body>
     <h1>Nosotros</h1>
 
+    <!-- Navegación: Logo, hipervínculos, seleccionador de idiomas -->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="index.html">
+            <img
+              src="./img/exclusivebalogowithoutbg.png"
+              alt="Logo Exclusive BA"
+              class="header__logo-image"
+            />
+          </a>
+        </div>
+        <button class="header__menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="header__menu-container">
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="index.html"
+                data-translate="links.home"
+                >Inicio</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="nosotros.html"
+                data-translate="links.about"
+                >Nosotros</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="tours.html"
+                data-translate="links.tours"
+                >Tours</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="contacto.html"
+                data-translate="links.contact"
+                >Contacto</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="resenas.html"
+                data-translate="links.reviews"
+                >Reseñas</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__lang-menu">
+          <select
+            class="header__lang-select"
+            aria-label="Change language"
+            id="languageSelector"
+          >
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+      </div>
+      <div class="header__titles">
+        <h1 class="header__title" data-translate="header.title">
+          Tours Personalizados
+        </h1>
+        <h2 class="header__subtitle" data-translate="header.subtitle">
+          ¡Conoce Buenos Aires a tu medida!
+        </h2>
+        <h3 class="header__description" data-translate="header.description">
+          La mejor forma de recorrer la capital Argentina
+        </h3>
+        <a
+          href="#tours-section"
+          class="header__button"
+          data-translate="header.button"
+          >Ver Tours</a
+        >
+      </div>
+    </header>
+    <!-- Contenido Principal de la Página: Todo el texto sobre nosotros -->
+    <main class="main"></main>
+
     <!-- categorias, contacto, preguntas -->
     <footer class="footer">
       <div class="footer__section-container">
         <div class="footer__section">
-          <h4 class="footer__title">Categorias</h4>
+          <h4 class="footer__title" data-translate="footer.categories.title">
+            Categorias
+          </h4>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#">Inicio</a></li>
-            <li class="footer__item"><a href="#">Nosotros</a></li>
-            <li class="footer__item"><a href="#">Tours</a></li>
-            <li class="footer__item"><a href="#">Contacto</a></li>
-            <li class="footer__item"><a href="#">Reseñas</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h4 class="footer__title">Contacto</h4>
-          <ul class="footer__list">
-            <li class="footer__item"><i class=""></i> +5491162535343</li>
             <li class="footer__item">
-              <i class=""></i> exclusivebuenosaires@gmail.com
+              <a href="#" data-translate="links.home">Inicio</a>
             </li>
-            <li class="footer__item"><i class=""></i> @exclusiveba_</li>
+            <li class="footer__item">
+              <a href="#" data-translate="links.about">Nosotros</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" data-translate="links.tours">Tours</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" data-translate="links.contact">Contacto</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" data-translate="links.reviews">Reseñas</a>
+            </li>
           </ul>
         </div>
         <div class="footer__section">
-          <h4 class="footer__title">Preguntas</h4>
-          <p class="footer__subtitle">
+          <h4 class="footer__title" data-translate="footer.contact.title">
+            Contacto
+          </h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <i class="fa-brands fa-whatsapp"></i> +5491162535343
+            </li>
+            <li class="footer__item">
+              <i class="fa-regular fa-envelope"></i>
+              exclusivebuenosaires@gmail.com
+            </li>
+            <li class="footer__item">
+              <i class="fa-brands fa-instagram"></i> @exclusiveba_
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title" data-translate="footer.questions.title">
+            Preguntas
+          </h4>
+          <p
+            class="footer__subtitle"
+            data-translate="footer.questions.subtitle"
+          >
             ¡Suscribete para no perderte ninguna novedad!
           </p>
           <form>
@@ -60,7 +178,7 @@
       </div>
       <div class="footer__copyright-container">
         <img src="./img/exclusivebalogowithoutbg.png" alt="Logo Exclusive BA" />
-        <p class="footer__copyright"></p>
+        <p class="footer__copyright" data-translate="footer.copyright"></p>
       </div>
     </footer>
 
