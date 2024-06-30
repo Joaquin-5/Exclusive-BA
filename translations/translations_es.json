@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "tours": "Tours",
+    "contact": "Contacto",
+    "reviews": "Reseñas"
+  },
+  "main": {
+    "title": "Tours Personalizados",
+    "subtitle": "¡Conoce Buenos Aires a tu medida!",
+    "description": "La mejor forma de recorrer la capital Argentina",
+    "button": "Ver Tours"
+  }
+}

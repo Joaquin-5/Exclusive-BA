@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "tours": "Passeios",
+    "contact": "Contato",
+    "reviews": "Avaliações"
+  },
+  "main": {
+    "title": "Passeios Personalizados",
+    "subtitle": "Descubra Buenos Aires ao seu modo!",
+    "description": "A melhor forma de explorar a capital da Argentina",
+    "button": "Ver Passeios"
+  }
+}
