@@ -59,7 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
         .split(".")
         .reduce((obj, i) => obj[i], translations);
       if (translation) {
-        element.textContent = translation;
+        if (element.tagName === "INPUT" && element.type === "submit") {
+          element.value = translation;
+        } else {
+          element.textContent = translation;
+        }
       }
     });
   };

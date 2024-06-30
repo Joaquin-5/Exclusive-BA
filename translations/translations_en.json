@@ -24,7 +24,10 @@
     },
     "questions": {
       "title": "Questions",
-      "subtitle": "Subscribe to stay updated on the latest news!"
+      "subtitle": "Subscribe to stay updated on the latest news!",
+      "submit": {
+        "button": "Submit"
+      }
     },
     "copyright": "© {year} Exclusive BA. All rights reserved."
   }

@@ -97,26 +97,11 @@
           </select>
         </div>
       </div>
-      <div class="header__titles">
-        <h1 class="header__title" data-translate="header.title">
-          Tours Personalizados
-        </h1>
-        <h2 class="header__subtitle" data-translate="header.subtitle">
-          ¡Conoce Buenos Aires a tu medida!
-        </h2>
-        <h3 class="header__description" data-translate="header.description">
-          La mejor forma de recorrer la capital Argentina
-        </h3>
-        <a
-          href="#tours-section"
-          class="header__button"
-          data-translate="header.button"
-          >Ver Tours</a
-        >
-      </div>
     </header>
     <!-- Contenido Principal de la Página: Todo el texto sobre nosotros -->
-    <main class="main"></main>
+    <main class="main">
+      
+    </main>
 
     <!-- categorias, contacto, preguntas -->
     <footer class="footer">
@@ -127,23 +112,25 @@
           </h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#" data-translate="links.home">Inicio</a>
+              <a href="index.html" data-translate="links.home">Inicio</a>
             </li>
             <li class="footer__item">
-              <a href="#" data-translate="links.about">Nosotros</a>
+              <a href="nosotros.html" data-translate="links.about">Nosotros</a>
             </li>
             <li class="footer__item">
               <a href="#" data-translate="links.tours">Tours</a>
             </li>
             <li class="footer__item">
-              <a href="#" data-translate="links.contact">Contacto</a>
+              <a href="contacto.html" data-translate="links.contact"
+                >Contacto</a
+              >
             </li>
             <li class="footer__item">
-              <a href="#" data-translate="links.reviews">Reseñas</a>
+              <a href="resenas.html" data-translate="links.reviews">Reseñas</a>
             </li>
           </ul>
         </div>
-        <div class="footer__section">
+        <div class="footer__section footer__section--contact">
           <h4 class="footer__title" data-translate="footer.contact.title">
             Contacto
           </h4>
@@ -172,12 +159,19 @@
           </p>
           <form>
             <input type="text" placeholder="Ex: juanrodriguez@gmail.com" />
-            <input type="submit" />
+            <input
+              type="submit"
+              data-translate="footer.questions.submit.button"
+            />
           </form>
         </div>
       </div>
       <div class="footer__copyright-container">
-        <img src="./img/exclusivebalogowithoutbg.png" alt="Logo Exclusive BA" />
+        <img
+          src="./img/exclusivebalogowithoutbg.png"
+          alt="Logo Exclusive BA"
+          class="footer__logo-image"
+        />
         <p class="footer__copyright" data-translate="footer.copyright"></p>
       </div>
     </footer>

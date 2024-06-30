@@ -46,6 +46,10 @@ Exclusive-BA/
 │   └── translations_en.json
 │   └── translations_es.json
 │   └── translations_pt.json
+├── contacto.html
+├── demo-code-languaje-switcher.txt
 ├── index.html
-└── README.md
+├── nosotros.html
+├── README.md
+└── resenas.html
 ```

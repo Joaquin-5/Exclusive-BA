@@ -24,7 +24,10 @@
     },
     "questions": {
       "title": "Perguntas",
-      "subtitle": "Inscreva-se para não perder nenhuma novidade!"
+      "subtitle": "Inscreva-se para não perder nenhuma novidade!",
+      "submit": {
+        "button": "Enviar"
+      }
     },
     "copyright": "© {year} Exclusive BA. Todos os direitos reservados."
   }
