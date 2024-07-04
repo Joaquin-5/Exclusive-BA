@@ -59,8 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .split(".")
         .reduce((obj, i) => obj[i], translations);
       if (translation) {
-        if (element.tagName === "INPUT" && element.type === "submit") {
-          element.value = translation;
+        // Reemplaza \n\n por <br><br> si el elemento es un párrafo
+        if (element.tagName.toLowerCase() === "p") {
+          element.innerHTML = translation.replace(/\n\n/g, "<br><br>");
         } else {
           element.textContent = translation;
         }

@@ -12,6 +12,12 @@
     "contact": "Contacto",
     "reviews": "Reseñas"
   },
+  "about": {
+    "main": {
+      "title": "Sobre Nosotros",
+      "description": "Bienvenidos a Exclusive BA, donde convertimos cada visita a Buenos Aires en una aventura única y personalizada. Nuestra misión es ofrecerte tours a medida que se adapten a tus intereses y preferencias, permitiéndote descubrir la ciudad como un verdadero porteño. \n\nItinerarios Personalizados: Ya sea que te apasione la historia, el arte, la gastronomía, la vida nocturna o los rincones ocultos, diseñamos un tour que refleje tus gustos y deseos. \n\nGuías Expertos: Nuestros guías locales no solo son conocedores, sino también apasionados por Buenos Aires. Te compartirán consejos e historias que no encontrarás en ninguna guía turística. \n\nFlexibilidad y Comodidad: Adaptamos nuestros tours a tu ritmo y horario, asegurando una experiencia cómoda y sin estrés. \n\nAtención Personalizada: Desde el momento en que nos contactas hasta el final de tu tour, te ofrecemos un servicio excepcional con acompañamiento en las visitas y atención al detalle, asegurando que tu visita sea perfecta."
+    }
+  },
   "footer": {
     "categories": {
       "title": "Categorías"
