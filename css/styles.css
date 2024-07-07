@@ -116,11 +116,6 @@ body.index-page .header {
   font-weight: 600;
 }
 
-.header__button:hover {
-  background-color: #0093f5;
-  color: #fff;
-}
-
 .main {
   padding: 40px 0;
   height: 100vh;
@@ -133,6 +128,7 @@ body.index-page .header {
 .main__title {
   color: #ffffff;
   font-size: 40px;
+  font-weight: 500;
 }
 
 .tour {
@@ -256,6 +252,11 @@ body.index-page .header {
   .header__lang-list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .header__button:hover {
+    background-color: #0093f5;
+    color: #fff;
   }
 
   .main-content {
