@@ -12,6 +12,19 @@
     "contact": "Contato",
     "reviews": "Avaliações"
   },
+  "index": {
+    "main": {
+      "title": "Passeios",
+      "tours": [
+        {
+          "title": "Passeio de meio dia"
+        },
+        {
+          "title": "Passeio de dia inteiro"
+        }
+      ]
+    }
+  },
   "about": {
     "main": {
       "title": "Sobre Nós",

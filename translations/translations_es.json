@@ -12,6 +12,19 @@
     "contact": "Contacto",
     "reviews": "Reseñas"
   },
+  "index": {
+    "main": {
+      "title": "Tours",
+      "tours": [
+        {
+          "title": "Tour de medio día"
+        },
+        {
+          "title": "Tour de día completo"
+        }
+      ]
+    }
+  },
   "about": {
     "main": {
       "title": "Sobre Nosotros",
