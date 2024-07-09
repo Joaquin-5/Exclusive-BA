@@ -182,7 +182,7 @@ body.index-page .header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .footer__title {
@@ -195,7 +195,17 @@ body.index-page .header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  font-size: 18px;
+  gap: 15px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_icon {
+  width: 25px;
 }
 
 .footer__section--contact .footer__item {

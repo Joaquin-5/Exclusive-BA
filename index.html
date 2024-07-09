@@ -113,7 +113,7 @@
         >
       </div>
     </header>
-    <!-- Contenido Principal de la Página: Información de los tours -->
+    <!-- Contenido Principal de la Página: Información de los tours 
     <main class="main" id="tours-section">
       <h2 class="main__title" data-translate="index.main.title">Tours</h2>
       <section class="tour">
@@ -127,7 +127,7 @@
         </h3>
       </section>
     </main>
-
+    -->
     <!-- categorias, contacto, preguntas -->
     <footer class="footer" id="contact">
       <div class="footer__section-container">
@@ -136,23 +136,31 @@
             Categorias
           </h4>
           <ul class="footer__list">
-            <li class="footer__item">
-              <a href="index.html" data-translate="links.home">Inicio</a>
-            </li>
-            <li class="footer__item">
-              <a href="nosotros.html" data-translate="links.about">Nosotros</a>
-            </li>
-            <li class="footer__item">
-              <a href="index.html#tours-section" data-translate="links.tours"
-                >Tours</a
-              >
-            </li>
-            <li class="footer__item">
-              <a href="#contact" data-translate="links.contact">Contacto</a>
-            </li>
-            <li class="footer__item">
-              <a href="resenas.html" data-translate="links.reviews">Reseñas</a>
-            </li>
+            <div class="footer__links">
+              <li class="footer__item">
+                <a href="index.html" data-translate="links.home">Inicio</a>
+              </li>
+              <li class="footer__item">
+                <a href="nosotros.html" data-translate="links.about"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="index.html#tours-section" data-translate="links.tours"
+                  >Tours</a
+                >
+              </li>
+            </div>
+            <div class="footer__links">
+              <li class="footer__item">
+                <a href="#contact" data-translate="links.contact">Contacto</a>
+              </li>
+              <li class="footer__item">
+                <a href="resenas.html" data-translate="links.reviews"
+                  >Reseñas</a
+                >
+              </li>
+            </div>
           </ul>
         </div>
         <div class="footer__section footer__section--contact">
@@ -161,14 +169,28 @@
           </h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <i class="fa-brands fa-whatsapp"></i> +5491162535343
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                alt="whatsapp icon"
+                class="footer_icon"
+              />
+              +5491162535343
             </li>
             <li class="footer__item">
-              <i class="fa-regular fa-envelope"></i>
+              <img
+                src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png"
+                alt="gmail icon"
+                class="footer_icon"
+              />
               exclusivebuenosaires@gmail.com
             </li>
             <li class="footer__item">
-              <i class="fa-brands fa-instagram"></i> @exclusiveba_
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
+                alt="instagram icon"
+                class="footer_icon"
+              />
+              @exclusiveba_
             </li>
           </ul>
         </div>
@@ -182,13 +204,13 @@
           >
             ¡Suscribete para no perderte ninguna novedad!
           </p>
-            <form>
-              <input type="text" placeholder="Ex: juanrodriguez@gmail.com" />
-              <input
-                type="submit"
-                data-translate="footer.questions.submit.button"
-              />
-            </form>
+          <form>
+            <input type="text" placeholder="Ex: juanrodriguez@gmail.com" />
+            <input
+              type="submit"
+              data-translate="footer.questions.submit.button"
+            />
+          </form>
         </div>
       </div>
       <div class="footer__copyright-container">
