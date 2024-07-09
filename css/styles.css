@@ -33,8 +33,7 @@ body.index-page .header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .header__logo {
