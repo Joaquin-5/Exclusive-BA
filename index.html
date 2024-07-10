@@ -169,28 +169,46 @@
           </h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
-                alt="whatsapp icon"
-                class="footer_icon"
-              />
-              +5491162535343
+              <a
+                href="https://wa.me/5491162535343"
+                target="_blank"
+                class="footer__link"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                  alt="whatsapp icon"
+                  class="footer__icon"
+                />
+                +5491162535343
+              </a>
             </li>
             <li class="footer__item">
-              <img
-                src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png"
-                alt="gmail icon"
-                class="footer_icon"
-              />
-              exclusivebuenosaires@gmail.com
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=exclusivebuenosaires@gmail.com"
+                target="_blank"
+                class="footer__link"
+              >
+                <img
+                  src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png"
+                  alt="gmail icon"
+                  class="footer__icon"
+                />
+                exclusivebuenosaires@gmail.com
+              </a>
             </li>
             <li class="footer__item">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
-                alt="instagram icon"
-                class="footer_icon"
-              />
-              @exclusiveba_
+              <a
+                href="https://www.instagram.com/exclusiveba_"
+                target="_blank"
+                class="footer__link"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
+                  alt="instagram icon"
+                  class="footer__icon"
+                />
+                @exclusiveba_
+              </a>
             </li>
           </ul>
         </div>
@@ -204,10 +222,20 @@
           >
             ¡Suscribete para no perderte ninguna novedad!
           </p>
-          <form>
-            <input type="text" placeholder="Ex: juanrodriguez@gmail.com" />
+          <form
+            class="footer__form"
+            action="https://formspree.io/f/manwnwny"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Ex: juanrodriguez@gmail.com"
+              class="footer__form-input"
+            />
             <input
               type="submit"
+              class="footer__form-submit"
               data-translate="footer.questions.submit.button"
             />
           </form>

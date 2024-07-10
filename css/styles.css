@@ -153,9 +153,9 @@ body.index-page .header {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  min-height: 100vh; /* Asegúrate de que el main ocupe toda la altura de la pantalla */
-  text-align: center; /* Para centrar el texto dentro de los elementos hijos */
-  padding: 0 20px; /* Añade padding si es necesario */
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .about-main__title {
@@ -181,7 +181,6 @@ body.index-page .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -204,15 +203,30 @@ body.index-page .header {
   gap: 20px;
 }
 
-.footer_icon {
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__icon {
   width: 25px;
 }
 
-.footer__section--contact .footer__item {
-  display: flex; /* Activa flexbox para los elementos de la lista */
-  align-items: center; /* Centra verticalmente los íconos y el texto */
-  justify-content: center; /* Centra horizontalmente los íconos y el texto */
-  gap: 10px; /* Espacio entre elementos de la lista */
+.footer__form-input, .footer__form-submit {
+  border-radius: 20px;
+  border: none;
+}
+
+.footer__form-input {
+  width: 250px;
+  padding: 3px 10px;
+  outline: none;
+}
+
+.footer__form-submit {
+  padding: 4px 8px;
 }
 
 .footer__copyright-container {
@@ -274,5 +288,10 @@ body.index-page .header {
 
   .main-content__button {
     padding: 20px 40px;
+  }
+
+  .footer__section-container {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
