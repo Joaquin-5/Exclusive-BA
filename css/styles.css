@@ -227,6 +227,7 @@ body.index-page .header {
 
 .footer__form-submit {
   padding: 4px 8px;
+  cursor: pointer;
 }
 
 .footer__copyright-container {
