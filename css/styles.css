@@ -214,6 +214,10 @@ body.index-page .header {
   width: 25px;
 }
 
+.footer__subtitle {
+  text-align: center;
+}
+
 .footer__form-input, .footer__form-submit {
   border-radius: 20px;
   border: none;
