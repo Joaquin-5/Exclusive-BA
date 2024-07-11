@@ -304,4 +304,9 @@ body.index-page .header {
   .footer__section {
     width: 33.3%;
   }
+
+  .footer__links {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
