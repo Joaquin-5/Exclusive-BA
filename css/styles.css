@@ -309,4 +309,8 @@ body.index-page .header {
   .footer__section {
     width: 33.3%;
   }
+
+  .footer__list--custom-style {
+    gap: 0;
+  }
 }
