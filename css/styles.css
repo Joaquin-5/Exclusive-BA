@@ -198,10 +198,6 @@ body.index-page .header {
   gap: 15px;
 }
 
-.footer__list--custom-style {
-  gap: 30px;
-}
-
 .footer__links {
   display: flex;
   gap: 20px;
@@ -311,6 +307,6 @@ body.index-page .header {
   }
 
   .footer__list--custom-style {
-    gap: 0;
+    gap: 30px;
   }
 }
