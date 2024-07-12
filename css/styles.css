@@ -198,6 +198,10 @@ body.index-page .header {
   gap: 15px;
 }
 
+.footer__list--custom-style {
+  gap: 30px;
+}
+
 .footer__links {
   display: flex;
   gap: 20px;
@@ -218,7 +222,8 @@ body.index-page .header {
   text-align: center;
 }
 
-.footer__form-input, .footer__form-submit {
+.footer__form-input,
+.footer__form-submit {
   border-radius: 20px;
   border: none;
 }
