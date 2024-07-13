@@ -1,4 +1,9 @@
 {
+  "tab": {
+    "about": "About - Exclusive BA",
+    "contact": "Contact - Exclusive BA",
+    "reviews": "Reviews - Exclusive BA"
+  },
   "header": {
     "title": "Customized Tours",
     "subtitle": "Discover Buenos Aires on your terms!",
