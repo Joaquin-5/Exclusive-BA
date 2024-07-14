@@ -23,7 +23,7 @@ body.about-page,
   background-color: #2e3536;
 }
 
-body.index-page .header {
+.header--index {
   position: relative;
   height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
@@ -115,7 +115,7 @@ body.index-page .header {
   font-weight: 600;
 }
 
-.main {
+.index-main {
   padding: 40px 0;
   height: 100vh;
   display: flex;
@@ -127,7 +127,8 @@ body.index-page .header {
 .main__title {
   color: #ffffff;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 400;
+  text-align: center;
 }
 
 .tour {
@@ -162,6 +163,27 @@ body.index-page .header {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
+}
+
+/* Estilos del reviews.html */
+.reviews-main {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-card {
+  width: 200px;
+  height: 200px;
+  background-color: red;
 }
 
 .footer {
@@ -233,6 +255,11 @@ body.index-page .header {
 .footer__form-submit {
   padding: 4px 8px;
   cursor: pointer;
+  transition: background-color 0.6s;
+}
+
+.footer__form-submit:hover {
+  background-color: red;
 }
 
 .footer__copyright-container {
@@ -294,6 +321,13 @@ body.index-page .header {
 
   .main-content__button {
     padding: 20px 40px;
+  }
+
+  /* Estilos del reviews.html */
+  .review-section {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .footer__section-container {

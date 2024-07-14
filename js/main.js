@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const hamburguerMenu = document.querySelector(".header__menu-toggle");
   const languageSelector = document.getElementById("languageSelector");
+  const htmlElement = document.documentElement;
   const copyrightElement = document.querySelector(".footer__copyright");
 
   // Toggle el div con la clase header__menu-container
-  const adjustMenuContainer = () => {
+  /* const adjustMenuContainer = () => {
     const menuContainer = document.querySelector(".header__menu-container");
     if (window.innerWidth >= 768) {
       if (menuContainer) {
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         header.appendChild(newMenuContainer);
       }
     }
-  };
+  }; */
 
   adjustMenuContainer();
   window.addEventListener("resize", adjustMenuContainer);
@@ -47,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const translations = await response.json();
       applyTranslations(translations);
       updateCopyright(translations.footer.copyright);
+      htmlElement.setAttribute("lang", lang);
     } catch (error) {
       console.error("Error loading translations:", error);
     }
