@@ -19,6 +19,7 @@ body.index-page {
 }
 
 body.about-page,
+body.reviews-page,
 .main {
   background-color: #2e3536;
 }
@@ -28,12 +29,25 @@ body.about-page,
   height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
+.header__nav--desktop,
+.header__nav--mobile {
+  padding-top: 20px;
+}
+
+.header__nav--desktop {
+  display: none;
+}
+
+.header__logo-and-toggle {
+  display: flex;
+  justify-content: space-around;
+}
+
 .header__top {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 15px;
 }
 
 .header__logo {
@@ -259,7 +273,7 @@ body.about-page,
 }
 
 .footer__form-submit:hover {
-  background-color: red;
+  background-color: #2e3536;
 }
 
 .footer__copyright-container {
@@ -278,6 +292,22 @@ body.about-page,
 }
 
 @media (min-width: 768px) {
+  .header__nav--mobile {
+    display: none;
+  }
+
+  .header__nav--desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header__nav-list {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header__top {
     justify-content: space-between;
   }
@@ -308,6 +338,10 @@ body.about-page,
   .header__lang-list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .header__titles {
+    margin-top: 7%;
   }
 
   .header__button:hover {

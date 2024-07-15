@@ -1,38 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".header");
+  const menuContainer = document.querySelector(".header__menu-container");
   const hamburguerMenu = document.querySelector(".header__menu-toggle");
   const languageSelector = document.getElementById("languageSelector");
   const htmlElement = document.documentElement;
   const copyrightElement = document.querySelector(".footer__copyright");
 
-  // Toggle el div con la clase header__menu-container
-  /* const adjustMenuContainer = () => {
-    const menuContainer = document.querySelector(".header__menu-container");
-    if (window.innerWidth >= 768) {
-      if (menuContainer) {
-        while (menuContainer.firstChild) {
-          header.appendChild(menuContainer.firstChild);
-        }
-        menuContainer.remove();
-      }
-    } else {
-      if (!menuContainer) {
-        const newMenuContainer = document.createElement("div");
-        newMenuContainer.classList.add("header__menu-container");
-        while (header.children.length > 2) {
-          newMenuContainer.appendChild(header.children[2]);
-        }
-        header.appendChild(newMenuContainer);
-      }
-    }
-  }; */
-
-  adjustMenuContainer();
-  window.addEventListener("resize", adjustMenuContainer);
-
   // Toggle menú hamburguesa
   hamburguerMenu.addEventListener("click", () => {
-    const menuContainer = document.querySelector(".header__menu-container");
     if (
       menuContainer.style.display === "none" ||
       menuContainer.style.display === ""

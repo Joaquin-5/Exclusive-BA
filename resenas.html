@@ -21,84 +21,68 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="reviews-page">
     <!-- Navegación: Logo, hipervínculos, seleccionador de idiomas -->
     <header class="header">
-      <div class="header__top">
+      <!-- Desktop Navigation -->
+      <div class="header__nav header__nav--desktop">
         <div class="header__logo">
           <a href="index.html">
-            <img
-              src="./img/exclusivebalogowithoutbg.png"
-              alt="Logo Exclusive BA"
-              class="header__logo-image"
-            />
+            <img src="./img/exclusivebalogowithoutbg.png" alt="Logo Exclusive BA" class="header__logo-image" />
           </a>
         </div>
-        <button class="header__menu-toggle" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-      <div class="header__menu-container">
-        <nav class="header__nav" aria-label="Main navigation">
+        <nav class="header__navbar">
           <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                href="index.html"
-                data-translate="links.home"
-                >Inicio</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                href="nosotros.html"
-                data-translate="links.about"
-                >Nosotros</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                href="index.html#tours-section"
-                data-translate="links.tours"
-                >Tours</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                href="#contact"
-                data-translate="links.contact"
-                >Contacto</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                class="header__nav-link"
-                href="resenas.html"
-                data-translate="links.reviews"
-                >Reseñas</a
-              >
-            </li>
+            <li class="header__nav-item"><a class="header__nav-link" href="index.html" data-translate="links.home">Inicio</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="nosotros.html" data-translate="links.about">Nosotros</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#tours-section" data-translate="links.tours">Tours</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#contact" data-translate="links.contact">Contacto</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="resenas.html" data-translate="links.reviews">Reseñas</a></li>
           </ul>
         </nav>
         <div class="header__lang-menu">
-          <select
-            class="header__lang-select"
-            aria-label="Change language"
-            id="languageSelector"
-          >
+          <select class="header__lang-select" aria-label="Change language" id="languageSelector">
             <option value="es">Español</option>
             <option value="en">English</option>
             <option value="pt">Português</option>
           </select>
         </div>
       </div>
+    
+      <!-- Mobile Navigation -->
+      <div class="header__nav header__nav--mobile">
+        <div class="header__logo-and-toggle">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./img/exclusivebalogowithoutbg.png" alt="Logo Exclusive BA" class="header__logo-image" />
+            </a>
+          </div>
+          <button class="header__menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <nav class="header__menu-container">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="index.html" data-translate="links.home">Inicio</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="nosotros.html" data-translate="links.about">Nosotros</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#tours-section" data-translate="links.tours">Tours</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#contact" data-translate="links.contact">Contacto</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="resenas.html" data-translate="links.reviews">Reseñas</a></li>
+          </ul>
+          <div class="header__lang-menu">
+            <select class="header__lang-select" aria-label="Change language" id="languageSelector">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="pt">Português</option>
+            </select>
+          </div>
+        </nav>
+      </div>
     </header>
+    
     <!-- Contenido Principal de la Página: Reseñas con imágen y estrellas -->
     <main class="main reviews-main">
-      <h1 class="main__title">Reseñas</h1>
+      <h1 class="main__title">Reseñas de Pasajeros</h1>
       <section class="review-section">
         <!-- <div class="review-card">
           <img

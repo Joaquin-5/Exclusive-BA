@@ -24,8 +24,77 @@
   <body class="index-page">
     <!-- Navegación: Logo, hipervínculos, seleccionador de idiomas -->
     <header class="header header--index">
-      <div class="header__navigation">
-        <div class="header__top">
+      <!-- Desktop Navigation -->
+      <div class="header__nav header__nav--desktop">
+        <div class="header__logo">
+          <a href="index.html">
+            <img
+              src="./img/exclusivebalogowithoutbg.png"
+              alt="Logo Exclusive BA"
+              class="header__logo-image"
+            />
+          </a>
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="index.html"
+                data-translate="links.home"
+                >Inicio</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="nosotros.html"
+                data-translate="links.about"
+                >Nosotros</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="#tours-section"
+                data-translate="links.tours"
+                >Tours</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="#contact"
+                data-translate="links.contact"
+                >Contacto</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="resenas.html"
+                data-translate="links.reviews"
+                >Reseñas</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__lang-menu">
+          <select
+            class="header__lang-select"
+            aria-label="Change language"
+            id="languageSelector"
+          >
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="header__nav header__nav--mobile">
+        <div class="header__logo-and-toggle">
           <div class="header__logo">
             <a href="index.html">
               <img
@@ -39,51 +108,49 @@
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
-        <div class="header__menu-container">
-          <nav class="header__nav" aria-label="Main navigation">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a
-                  class="header__nav-link"
-                  href="index.html"
-                  data-translate="links.home"
-                  >Inicio</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  class="header__nav-link"
-                  href="nosotros.html"
-                  data-translate="links.about"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  class="header__nav-link"
-                  href="#tours-section"
-                  data-translate="links.tours"
-                  >Tours</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  class="header__nav-link"
-                  href="#contact"
-                  data-translate="links.contact"
-                  >Contacto</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  class="header__nav-link"
-                  href="resenas.html"
-                  data-translate="links.reviews"
-                  >Reseñas</a
-                >
-              </li>
-            </ul>
-          </nav>
+        <nav class="header__menu-container">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="index.html"
+                data-translate="links.home"
+                >Inicio</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="nosotros.html"
+                data-translate="links.about"
+                >Nosotros</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="#tours-section"
+                data-translate="links.tours"
+                >Tours</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="#contact"
+                data-translate="links.contact"
+                >Contacto</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link"
+                href="resenas.html"
+                data-translate="links.reviews"
+                >Reseñas</a
+              >
+            </li>
+          </ul>
           <div class="header__lang-menu">
             <select
               class="header__lang-select"
@@ -95,8 +162,10 @@
               <option value="pt">Português</option>
             </select>
           </div>
-        </div>
+        </nav>
       </div>
+
+      <!-- Header Titles -->
       <div class="header__titles">
         <h1 class="header__title" data-translate="header.title">
           Tours Personalizados
@@ -115,6 +184,7 @@
         >
       </div>
     </header>
+
     <!-- Contenido Principal de la Página: Información de los tours 
     <main class="main index-main" id="tours-section">
       <h2 class="main__title" data-translate="index.main.title">Tours</h2>
