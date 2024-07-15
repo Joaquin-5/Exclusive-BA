@@ -30,6 +30,11 @@
       ]
     }
   },
+  "reviews": {
+    "main": {
+      "title": "Comentários de Passageiros"
+    }
+  },
   "about": {
     "main": {
       "title": "Sobre Nós",
