@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const htmlElement = document.documentElement;
   const menuContainer = document.querySelector(".header__menu-container");
   const hamburguerMenu = document.querySelector(".header__menu-toggle");
-  const languageSelector = document.getElementById("languageSelector");
-  const htmlElement = document.documentElement;
+  const languageSelectorDesktop = document.getElementById(
+    "languageSelectorDesktop"
+  );
+  const languageSelectorMobile = document.getElementById(
+    "languageSelectorMobile"
+  );
   const copyrightElement = document.querySelector(".footer__copyright");
 
   // Toggle menú hamburguesa
@@ -57,15 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleLanguageChange = (lang) => {
     localStorage.setItem("selectedLang", lang);
     loadTranslations(lang);
+    languageSelectorDesktop.value = lang;
+    languageSelectorMobile.value = lang;
+    document.documentElement.lang = lang; // Cambia el atributo lang en la etiqueta html
   };
 
   // Cargar el idioma persistido o usar un valor por defecto
   const persistedLang = localStorage.getItem("selectedLang") || "es";
-  languageSelector.value = persistedLang;
+  languageSelectorDesktop.value = persistedLang;
+  languageSelectorMobile.value = persistedLang;
   loadTranslations(persistedLang);
 
-  // Añadir un evento de cambio al selector de idioma
-  languageSelector.addEventListener("change", (event) => {
+  // Añadir un evento de cambio a ambos selectores de idioma
+  languageSelectorDesktop.addEventListener("change", (event) => {
+    const selectedLang = event.target.value;
+    handleLanguageChange(selectedLang);
+  });
+
+  languageSelectorMobile.addEventListener("change", (event) => {
     const selectedLang = event.target.value;
     handleLanguageChange(selectedLang);
   });

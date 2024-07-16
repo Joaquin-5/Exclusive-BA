@@ -25,7 +25,6 @@ body.reviews-page,
 }
 
 .header--index {
-  position: relative;
   height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
@@ -66,17 +65,19 @@ body.reviews-page,
 }
 
 .header__menu-container {
-  display: none;
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  height: 250px;
 }
 
 .header__nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
@@ -160,23 +161,25 @@ body.reviews-page,
   font-weight: 500;
 }
 
-/* Estilos del "about.html" */
+/* Estilos del "nosotros.html" */
 .about-main {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   padding: 0 20px;
 }
 
-.about-main__title {
+.about-main__title,
+.reviews-main__title {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 /* Estilos del reviews.html */
@@ -304,7 +307,6 @@ body.reviews-page,
 
   .header__nav-list {
     width: 450px;
-    display: flex;
     justify-content: space-between;
   }
 
@@ -341,7 +343,19 @@ body.reviews-page,
   }
 
   .header__titles {
-    margin-top: 7%;
+    margin-top: 10%;
+  }
+
+  .header__title {
+    font-size: 60px;
+  }
+
+  .header__subtitle {
+    font-size: 40px;
+  }
+
+  .header__description {
+    font-size: 30px;
   }
 
   .header__button:hover {
@@ -357,7 +371,20 @@ body.reviews-page,
     padding: 20px 40px;
   }
 
-  /* Estilos del reviews.html */
+  /* Estilos del nosotros.html */
+  .about-main {
+    padding: 0 20%;
+  }
+
+  .about-main__title {
+    font-size: 60px;
+  }
+
+  .about-main__text {
+    font-size: 22px;
+  }
+
+  /* Estilos del resenas.html */
   .review-section {
     flex-direction: row;
     justify-content: space-around;
