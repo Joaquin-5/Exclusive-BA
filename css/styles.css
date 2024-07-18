@@ -452,18 +452,13 @@ body.reviews-page,
   }
 
   .review-card__header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
   .review-card__image {
     width: 100px;
-  }
-
-  .review-card__details {
-    display: flex;
-    flex-direction: column;
   }
 
   .footer__section-container {
