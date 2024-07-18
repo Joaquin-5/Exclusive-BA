@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // fetch de las reseñas
   // Asumiendo que el archivo JSON está en la ruta '/data/reviews.json'
-  if (window.location.includes === "resena.html") {
+  if (window.location.includes === "resenas.html") {
     fetch("/data/reviews.json")
       .then((response) => response.json())
       .then((reviews) => {
