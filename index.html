@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/lang-selector.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -79,16 +80,49 @@
             </li>
           </ul>
         </nav>
-        <div class="header__lang-menu">
-          <select
-            class="header__lang-select header__lang-select--desktop"
-            aria-label="Change language"
-            id="languageSelectorDesktop"
-          >
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="pt">Português</option>
-          </select>
+        <div class="custom-select__wrapper" id="languageSelectorDesktop">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span class="custom-select__label">
+                <img
+                  src="https://flagsapi.com/ES/flat/64.png"
+                  alt="Español"
+                  class="custom-select__flag"
+                />
+                Español
+              </span>
+              <div class="custom-select__arrow"></div>
+            </div>
+            <div class="custom-select__options">
+              <span
+                class="custom-select_option custom-select_option--selected"
+                data-value="es"
+              >
+                <img
+                  src="https://flagsapi.com/ES/flat/64.png"
+                  alt="Español"
+                  class="custom-select__flag"
+                />
+                Español
+              </span>
+              <span class="custom-select__option" data-value="en">
+                <img
+                  src="https://flagsapi.com/US/flat/64.png"
+                  alt="English"
+                  class="custom-select__flag"
+                />
+                English
+              </span>
+              <span class="custom-select__option" data-value="pt">
+                <img
+                  src="https://flagsapi.com/PT/flat/64.png"
+                  alt="Português"
+                  class="custom-select__flag"
+                />
+                Português
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -151,16 +185,49 @@
               >
             </li>
           </ul>
-          <div class="header__lang-menu">
-            <select
-              class="header__lang-select header__lang-select--mobile"
-              aria-label="Change language"
-              id="languageSelectorMobile"
-            >
-              <option value="es">Español</option>
-              <option value="en">English</option>
-              <option value="pt">Português</option>
-            </select>
+          <div class="custom-select__wrapper" id="languageSelectorMobile">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span class="custom-select__label">
+                  <img
+                    src="https://flagsapi.com/ES/flat/64.png"
+                    alt="Español"
+                    class="custom-select__flag"
+                  />
+                  Español
+                </span>
+                <div class="custom-select__arrow"></div>
+              </div>
+              <div class="custom-select__options">
+                <span
+                  class="custom-select_option custom-select_option--selected"
+                  data-value="es"
+                >
+                  <img
+                    src="https://flagsapi.com/ES/flat/64.png"
+                    alt="Español"
+                    class="custom-select__flag"
+                  />
+                  Español
+                </span>
+                <span class="custom-select__option" data-value="en">
+                  <img
+                    src="https://flagsapi.com/US/flat/64.png"
+                    alt="English"
+                    class="custom-select__flag"
+                  />
+                  English
+                </span>
+                <span class="custom-select__option" data-value="pt">
+                  <img
+                    src="https://flagsapi.com/PT/flat/64.png"
+                    alt="Português"
+                    class="custom-select__flag"
+                  />
+                  Português
+                </span>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
