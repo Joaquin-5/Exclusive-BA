@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', (e) => {
     customOptions.forEach(option => {
       if (!option.previousElementSibling.contains(e.target)) {
         option.classList.remove('custom-select__options--open');
