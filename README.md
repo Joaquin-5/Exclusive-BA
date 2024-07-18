@@ -36,6 +36,8 @@ Exclusive-BA/
 │   ├── style.css
 │   └── reset.css
 │   └── lang-selector.css
+├── data/
+│   ├── reviews.json
 ├── img/
 │   └── exclusivebalogowithoutbg.jpg
 │   └── exclusivebalogowithbg.jpeg

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const languageSelectorMobile = document.getElementById(
     "languageSelectorMobile"
   );
+  const reviewsContainer = document.querySelector(".reviews-section");
   const copyrightElement = document.querySelector(".footer__copyright");
 
   // Toggle menú hamburguesa
@@ -83,4 +84,45 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedLang = event.target.value;
     handleLanguageChange(selectedLang);
   });
+
+  // fetch de las reseñas
+  // Asumiendo que el archivo JSON está en la ruta '/data/reviews.json'
+  fetch("/data/reviews.json")
+    .then((response) => response.json())
+    .then((reviews) => {
+      reviews.forEach((review) => {
+        let starsHTML = "";
+        for (let i = 0; i < 5; i++) {
+          if (i < review.stars) {
+            starsHTML += '<i class="fa fa-star checked"></i>';
+          } else {
+            starsHTML += '<i class="fa fa-star"></i>';
+          }
+        }
+
+        const reviewHTML = `
+        <div class="review-card">
+          <div class="review-card__header">
+          ${
+            review.image
+              ? `<img src="${review.image}" alt="${review.name}" class="review-card__image" />`
+              : `<img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="${review.name}" class="review-card__image" />`
+          }
+            <div class="review-card__details">
+              <h2 class="review-card__name">${review.name}</h2>
+              <div class="review-card__stars">${starsHTML}</div>
+            </div>
+          </div>
+          <hr class="review-card__separator" />
+          <div class="review-card__content">
+            <p>
+              ${review.description}
+            </p>
+          </div>
+        </div>
+        `;
+        reviewsContainer.insertAdjacentHTML("beforeend", reviewHTML);
+      });
+    })
+    .catch((error) => console.error("Error fetching reviews:", error));
 });
