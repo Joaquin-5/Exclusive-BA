@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const languageSelectorMobile = document.getElementById(
     "languageSelectorMobile"
   );
+  const selectTrigger = document.querySelector('.custom-select__trigger');
+  const customOptions = document.querySelector('.custom-select__options');
+  const customOptionsList = document.querySelectorAll('.custom-select__option');
   const reviewsContainer = document.querySelector(".reviews-section");
   const copyrightElement = document.querySelector(".footer__copyright");
-  const selectTrigger = document.querySelector(".custom-select__trigger");
-  const customOptions = document.querySelector(".custom-select__options");
-  const customOptionsList = document.querySelectorAll(".custom-select__option");
 
   // Toggle menú hamburguesa
   hamburguerMenu.addEventListener("click", () => {
@@ -22,6 +22,35 @@ document.addEventListener("DOMContentLoaded", () => {
     )
       menuContainer.style.display = "flex";
     else menuContainer.style.display = "none";
+  });
+
+  selectTrigger.addEventListener('click', function() {
+    customOptions.classList.toggle('custom-select__options--open');
+});
+
+customOptionsList.forEach(option => {
+    option.addEventListener('click', function() {
+        selectTrigger.querySelector('.custom-select__label').innerHTML = this.innerHTML;
+        customOptions.querySelector('.custom-select__option--selected').classList.remove('custom-select__option--selected');
+        this.classList.add('custom-select__option--selected');
+        customOptions.classList.remove('custom-select__options--open');
+        
+        // Actualiza el valor del selector de idioma
+        const selectedLang = this.getAttribute('data-value');
+        handleLanguageChange(selectedLang);  // Llama a la función para cambiar el idioma
+    });
+});
+
+document.addEventListener('click', function(e) {
+    if (!selectTrigger.contains(e.target)) {
+        customOptions.classList.remove('custom-select__options--open');
+    }
+});
+
+  document.addEventListener("click", (e) => {
+    if (!selectTrigger.contains(e.target)) {
+      customOptions.classList.remove("custom-select__options--open");
+    }
   });
 
   // Traductor
@@ -52,14 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
-  };
-
-  // Actualizar el copyright con el año actual
-  const updateCopyright = (copyrightText) => {
-    const year = new Date().getFullYear();
-    if (copyrightElement && copyrightText) {
-      copyrightElement.textContent = copyrightText.replace("{year}", year);
-    }
   };
 
   // Manejar el cambio de idioma y persistir la selección
@@ -131,29 +152,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error fetching reviews:", error));
   }
 
-  selectTrigger.addEventListener("click", function () {
-    customOptions.classList.toggle("custom-select__options--open");
-  });
-
-  customOptionsList.forEach((option) => {
-    option.addEventListener("click", () => {
-      selectTrigger.querySelector(".custom-select__label").innerHTML =
-        this.innerHTML;
-      customOptions
-        .querySelector(".custom-select_option--selected")
-        .classList.remove("custom-select_option--selected");
-      this.classList.add("custom-select__option--selected");
-      customOptions.classList.remove("custom-select__options--open");
-
-      // Actualiza el valor del selector de idioma
-      const selectedLang = this.getAttribute("data-value");
-      handleLanguageChange(selectedLang); // Llama a la función para cambiar el idioma
-    });
-  });
-
-  document.addEventListener("click", (e) => {
-    if (!selectTrigger.contains(e.target)) {
-      customOptions.classList.remove("custom-select__options--open");
+  // Actualizar el copyright con el año actual
+  const updateCopyright = (copyrightText) => {
+    const year = new Date().getFullYear();
+    if (copyrightElement && copyrightText) {
+      copyrightElement.textContent = copyrightText.replace("{year}", year);
     }
-  });
+  };
 });
