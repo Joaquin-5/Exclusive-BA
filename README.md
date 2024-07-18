@@ -49,7 +49,6 @@ Exclusive-BA/
 │   └── translations_es.json
 │   └── translations_pt.json
 ├── contacto.html
-├── demo-code-languaje-switcher.txt
 ├── index.html
 ├── nosotros.html
 ├── README.md
