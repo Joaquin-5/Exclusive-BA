@@ -22,7 +22,7 @@ git clone https://github.com/Joaquin-5/Exclusive-BA.git
 cd Exclusive BA
 ```
 
-3. Abrir el archivo index.html
+3. Servir el archivo index.html en un servidor local. Ej: Live Server, sino configurar uno
 
 ## Uso
 
