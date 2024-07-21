@@ -65,8 +65,15 @@ body.reviews-page,
   color: #ffffff;
 }
 
-.header__menu-container {
+.header__menu-container--hidden {
   display: none;
+}
+
+.header__menu-container--visible {
+  display: flex;
+}
+
+.header__menu-container {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
@@ -238,7 +245,6 @@ body.reviews-page,
   margin: 0;
 }
 
-
 .review-card__stars {
   display: flex;
   gap: 4px;
@@ -378,7 +384,7 @@ body.reviews-page,
     display: none;
   }
 
-  .header__menu-container {
+  .header__menu-container header__menu-container--hidden {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
