@@ -7,7 +7,7 @@
 1. [Instalación](#instalación)
 2. [Uso](#uso)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Tecnologías Utilizadas](#Tecnologías Utilizadas)
+4. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 
 ## Instalación
 
