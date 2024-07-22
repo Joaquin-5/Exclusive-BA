@@ -7,6 +7,7 @@
 1. [Instalación](#instalación)
 2. [Uso](#uso)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
+4. [Tecnologías Utilizadas](#Tecnologías Utilizadas)
 
 ## Instalación
 
@@ -54,3 +55,49 @@ Exclusive-BA/
 ├── README.md
 └── resenas.html
 ```
+
+## Tecnologías Utilizadas
+
+### HTML5
+
+![HTML5](https://upload.wikimedia.org/wikipedia/commons/8/8e/HTML5_logo_and_wordmark.svg)
+
+### CSS3
+
+![CSS3](https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg)
+
+### JavaScript
+
+![JavaScript](https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png)
+
+### Fetch API
+
+![Fetch API](https://upload.wikimedia.org/wikipedia/commons/5/5a/Fetch_API_logo.svg)
+
+### Font Awesome
+
+![Font Awesome](https://upload.wikimedia.org/wikipedia/commons/d/d7/Font_Awesome_5_brands_fontawesome.svg)
+
+### JSON
+
+![JSON](https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg)
+
+### Google Fonts
+
+![Google Fonts](https://upload.wikimedia.org/wikipedia/commons/e/ee/Google_fonts_logo.svg)
+
+### BEM Methodology
+
+![BEM](https://upload.wikimedia.org/wikipedia/commons/0/00/BEM_-_Block_Element_Modifier.svg)
+
+### LocalStorage
+
+![LocalStorage](https://upload.wikimedia.org/wikipedia/commons/4/48/LocalStorage_logo.svg)
+
+### Git
+
+![Git](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
+
+### GitHub
+
+![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)
