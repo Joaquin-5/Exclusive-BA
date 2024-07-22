@@ -62,7 +62,7 @@ Exclusive-BA/
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="50" height="50">
 
 ### CSS3
-<img src="https://brandslogos.com/wp-content/uploads/images/large/css-logo.png" alt="CSS3" width="50" height="50">
+<img src="https://brandslogos.com/wp-content/uploads/images/large/css-logo.png" alt="CSS3" width="100" height="50">
 
 ### JavaScript
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="50" height="50">
@@ -77,7 +77,7 @@ Exclusive-BA/
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_json_icon_130455.png" alt="JSON" width="50" height="50">
 
 ### Google Fonts
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/1280px-Google_Fonts_logo.svg.png" alt="Google Fonts" width="50" height="50">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/1280px-Google_Fonts_logo.svg.png" alt="Google Fonts" width="150" height="50">
 
 ### BEM Methodology
 <img src="https://seeklogo.com/images/B/bem-logo-410238E842-seeklogo.com.png" alt="BEM Methodology" width="50" height="50">
