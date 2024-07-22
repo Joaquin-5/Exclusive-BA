@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   selectTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", () => {
+    trigger.addEventListener("click", function () {
       this.nextElementSibling.classList.toggle("custom-select__options--open");
     });
   });
 
   customOptionsList.forEach((option) => {
-    option.addEventListener("click", () => {
+    option.addEventListener("click", function () {
       const trigger = this.closest(".custom-select").querySelector(
         ".custom-select__trigger .custom-select__label"
       );
