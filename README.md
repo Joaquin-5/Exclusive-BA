@@ -59,45 +59,34 @@ Exclusive-BA/
 ## Tecnologías Utilizadas
 
 ### HTML5
-
-![HTML5](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="50" height="50">
 
 ### CSS3
-
-![CSS3](https://brandslogos.com/wp-content/uploads/images/large/css-logo.png)
+<img src="https://brandslogos.com/wp-content/uploads/images/large/css-logo.png" alt="CSS3" width="50" height="50">
 
 ### JavaScript
-
-![JavaScript](https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="50" height="50">
 
 ### Fetch API
-
-![Fetch API](https://upload.wikimedia.org/wikipedia/commons/5/5a/Fetch_API_logo.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Fetch_API_logo.svg" alt="Fetch API" width="50" height="50">
 
 ### Font Awesome
-
-![Font Awesome](https://static-00.iconduck.com/assets.00/font-awesome-icon-2048x2048-ntlx9tlt.png)
+<img src="https://static-00.iconduck.com/assets.00/font-awesome-icon-2048x2048-ntlx9tlt.png" alt="Font Awesome" width="50" height="50">
 
 ### JSON
-
-![JSON](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_json_icon_130455.png)
+<img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_json_icon_130455.png" alt="JSON" width="50" height="50">
 
 ### Google Fonts
-
-![Google Fonts](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/1280px-Google_Fonts_logo.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/1280px-Google_Fonts_logo.svg.png" alt="Google Fonts" width="50" height="50">
 
 ### BEM Methodology
-
-![BEM](https://seeklogo.com/images/B/bem-logo-410238E842-seeklogo.com.png)
+<img src="https://seeklogo.com/images/B/bem-logo-410238E842-seeklogo.com.png" alt="BEM Methodology" width="50" height="50">
 
 ### LocalStorage
-
-![LocalStorage](https://upload.wikimedia.org/wikipedia/commons/4/48/LocalStorage_logo.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/48/LocalStorage_logo.svg" alt="LocalStorage" width="50" height="50">
 
 ### Git
-
-![Git](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png" alt="Git" width="50" height="50">
 
 ### GitHub
-
-![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)
+<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="50" height="50">
