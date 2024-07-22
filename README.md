@@ -60,11 +60,11 @@ Exclusive-BA/
 
 ### HTML5
 
-![HTML5](https://upload.wikimedia.org/wikipedia/commons/8/8e/HTML5_logo_and_wordmark.svg)
+![HTML5](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png)
 
 ### CSS3
 
-![CSS3](https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg)
+![CSS3](https://brandslogos.com/wp-content/uploads/images/large/css-logo.png)
 
 ### JavaScript
 
@@ -76,19 +76,19 @@ Exclusive-BA/
 
 ### Font Awesome
 
-![Font Awesome](https://upload.wikimedia.org/wikipedia/commons/d/d7/Font_Awesome_5_brands_fontawesome.svg)
+![Font Awesome](https://static-00.iconduck.com/assets.00/font-awesome-icon-2048x2048-ntlx9tlt.png)
 
 ### JSON
 
-![JSON](https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg)
+![JSON](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_json_icon_130455.png)
 
 ### Google Fonts
 
-![Google Fonts](https://upload.wikimedia.org/wikipedia/commons/e/ee/Google_fonts_logo.svg)
+![Google Fonts](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/1280px-Google_Fonts_logo.svg.png)
 
 ### BEM Methodology
 
-![BEM](https://upload.wikimedia.org/wikipedia/commons/0/00/BEM_-_Block_Element_Modifier.svg)
+![BEM](https://seeklogo.com/images/B/bem-logo-410238E842-seeklogo.com.png)
 
 ### LocalStorage
 
@@ -96,8 +96,8 @@ Exclusive-BA/
 
 ### Git
 
-![Git](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
+![Git](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png)
 
 ### GitHub
 
-![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)
+![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)
