@@ -384,7 +384,7 @@ body.reviews-page,
     display: none;
   }
 
-  .header__menu-container header__menu-container--hidden {
+  .header__menu-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
