@@ -7,7 +7,6 @@
 1. [Instalación](#instalación)
 2. [Uso](#uso)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 
 ## Instalación
 
@@ -55,14 +54,3 @@ Exclusive-BA/
 ├── README.md
 └── resenas.html
 ```
-
-## Tecnologías Utilizadas
-
-### HTML5
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="50" height="50">
-
-### CSS3
-<img src="https://brandslogos.com/wp-content/uploads/images/large/css-logo.png" alt="CSS3" width="50" height="100">
-
-### JavaScript
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="50" height="50">
