@@ -119,11 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
           const reviewHTML = `
             <div class="review-card">
               <div class="review-card__header">
-              ${
-                review.image
-                  ? `<img src="${review.image}" alt="${review.name}" class="review-card__image" />`
-                  : `<img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="${review.name}" class="review-card__image" />`
-              }
+                ${
+                  review.image
+                    ? `<img src="${review.image}" alt="${review.name}" class="review-card__image" />`
+                    : `<img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="${review.name}" class="review-card__image" />`
+                }
                 <div class="review-card__details">
                   <h2 class="review-card__name">${review.name}</h2>
                   <div class="review-card__stars">${starsHTML}</div>

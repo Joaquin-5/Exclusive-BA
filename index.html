@@ -55,14 +55,14 @@
                 >Nosotros</a
               >
             </li>
-            <li class="header__nav-item">
+            <!-- <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="#tours-section"
+                href="#askfortour-section"
                 data-translate="links.tours"
                 >Tours</a
               >
-            </li>
+            </li> -->
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
@@ -161,14 +161,14 @@
                 >Nosotros</a
               >
             </li>
-            <li class="header__nav-item">
+            <!-- <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="#tours-section"
+                href="#askfortour-section"
                 data-translate="links.tours"
                 >Tours</a
               >
-            </li>
+            </li> -->
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
@@ -245,7 +245,7 @@
           La mejor forma de recorrer la capital Argentina
         </h3>
         <a
-          href="#tours-section"
+          href="#askfortour-section"
           class="header__button"
           data-translate="header.button"
           >Pedir un Tour</a
@@ -254,20 +254,140 @@
     </header>
 
     <!-- Contenido Principal de la Página: Pedir un tour  -->
-    <main class="main index-main" id="tours-section">
-      <h2 class="main__title" data-translate="index.main.title">Pedir un Tour</h2>
-      <section class="tour">
-        <h3 class="tour__title" data-translate="index.main.tours.0.title">
-          half-day tour
-        </h3>
-      </section>
-      <section class="tour">
-        <h3 class="tour__title" data-translate="index.main.tours.1.title">
-          full-day tour
-        </h3>
-      </section>
+    <main class="main index-main" id="askfortour-section">
+      <h2 class="main__title" data-translate="index.main.title">
+        Pedir un Tour
+      </h2>
+      <form class="form" id="tourRequestForm">
+        <div class="form__grid">
+          <div class="form__group">
+            <label
+              class="form__label"
+              for="name"
+              data-translate="index.main.form.nameLabel"
+              >Nombre:</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex: Abel Ferreira"
+              data-translate="index.main.form.namePlaceholder"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label
+              class="form__label"
+              for="email"
+              data-translate="index.main.form.emailLabel"
+              >Email:</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ex: abelferreira@gmail.com"
+              data-translate="index.main.form.emailPlaceholder"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label
+              class="form__label"
+              for="numPeople"
+              data-translate="index.main.form.peopleLabel"
+              >Cantidad de Personas:</label
+            >
+            <select
+              class="form__input"
+              id="numPeople"
+              name="numPeople"
+              required
+            >
+              <option
+                value=""
+                disabled
+                selected
+                data-translate="index.main.form.peopleSelect.0"
+              >
+                Selecciona una opción
+              </option>
+              <option value="1" data-translate="index.main.form.peopleSelect.1">
+                1 persona
+              </option>
+              <option value="2" data-translate="index.main.form.peopleSelect.2">
+                2 personas
+              </option>
+              <option value="3" data-translate="index.main.form.peopleSelect.3">
+                3 personas
+              </option>
+              <option value="4" data-translate="index.main.form.peopleSelect.4">
+                4 personas
+              </option>
+              <option value="5" data-translate="index.main.form.peopleSelect.5">
+                5 personas
+              </option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label
+              class="form__label"
+              for="hotel"
+              data-translate="index.main.form.hotelLabel"
+              >Hotel de Hospedaje:</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="hotel"
+              name="hotel"
+              placeholder="Ex: Hotel Plaza"
+              required
+            />
+          </div>
+          <div class="form__group form__group--fullwidth">
+            <label
+              class="form__label"
+              for="tourDate"
+              data-translate="index.main.form.tourDateLabel"
+              >Fecha del Tour:</label
+            >
+            <input
+              class="form__input"
+              type="date"
+              id="tourDate"
+              name="tourDate"
+              required
+            />
+          </div>
+          <div class="form__group form__group--fullwidth">
+            <label
+              class="form__label"
+              for="message"
+              data-translate="index.main.form.messageLabel"
+              >Detalle del tour:</label
+            >
+            <textarea
+              class="form__textarea"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button
+          class="form__submit"
+          type="submit"
+          data-translate="index.main.form.submitLabel"
+        >
+          Enviar Solicitud
+        </button>
+      </form>
     </main>
-    
+
     <!-- categorias, contacto, preguntas -->
     <footer class="footer" id="contact">
       <div class="footer__section-container">
@@ -285,11 +405,13 @@
                   >Nosotros</a
                 >
               </li>
-              <li class="footer__item">
-                <a href="index.html#tours-section" data-translate="links.tours"
+              <!-- <li class="footer__item">
+                <a
+                  href="index.html#askfortour-section"
+                  data-translate="links.tours"
                   >Tours</a
                 >
-              </li>
+              </li> -->
             </div>
             <div class="footer__links">
               <li class="footer__item">
@@ -352,32 +474,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="footer__section">
-          <h4 class="footer__title" data-translate="footer.questions.title">
-            Preguntas
-          </h4>
-          <p
-            class="footer__subtitle"
-            data-translate="footer.questions.subtitle"
-          >
-            ¡Suscribete para no perderte ninguna novedad!
-          </p>
-          <form class="footer__form">
-            <input
-              type="email"
-              name="email"
-              placeholder="Ex: juanrodriguez@gmail.com"
-              class="footer__form-input"
-            />
-            <button
-              type="submit"
-              class="footer__form-submit"
-              data-translate="footer.questions.submit.button"
-            >
-              Enviar
-            </button>
-          </form>
-        </div> -->
       </div>
       <div class="footer__copyright-container">
         <img
@@ -389,6 +485,18 @@
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "13-9xb_OGsNC6pxOy",
+        });
+      })();
+    </script>
+    <script src="./js/formHandler.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

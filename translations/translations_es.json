@@ -19,15 +19,26 @@
   },
   "index": {
     "main": {
-      "title": "Tours",
-      "tours": [
-        {
-          "title": "Tour de medio día"
-        },
-        {
-          "title": "Tour de día completo"
-        }
-      ]
+      "title": "Pedir un Tour",
+      "form": {
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Ex: Abel Ferreira",
+        "emailLabel": "Email",
+        "peopleLabel": "Cantidad de Personas",
+        "peopleSelect": [
+          "Selecciona una opción",
+          "1 persona",
+          "2 personas",
+          "3 personas",
+          "4 personas",
+          "5 personas"
+        ],
+        "hotelLabel": "Hotel de Hospedaje",
+        "tourDateLabel": "Fecha del Tour",
+        "messageLabel": "Detalle del Tour",
+        "messageDescription": "",
+        "submitButton": "Enviar Solicitud"
+      }
     }
   },
   "about": {

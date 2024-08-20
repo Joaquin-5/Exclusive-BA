@@ -26,7 +26,6 @@ body.reviews-page,
 
 .header--index {
   min-height: 100vh;
-  /* Ocupa toda la altura de la pantalla */
 }
 
 .header__nav--desktop,
@@ -140,7 +139,7 @@ body.reviews-page,
 
 .index-main {
   padding: 40px 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,19 +153,43 @@ body.reviews-page,
   text-align: center;
 }
 
-.tour {
-  background-color: #ffffff;
-  width: 75%;
+/* estilos del formulario "pedir un tour" */
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 800px;
-  padding: 20px;
+  gap: 15px;
 }
 
-.tour__title {
-  text-transform: uppercase;
-  font-weight: 500;
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__label {
+  color: #ffffff;
+}
+
+.form__input {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  outline: none;
+}
+
+.form__textarea {
+  max-width: 202px;
+  min-width: 202px;
+  min-height: 40px;
+  padding: 10px;
+}
+
+.form__submit {
+  padding: 10px;
+  border: none;
+  background-color: #4e7dbe;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /* Estilos del "nosotros.html" */
@@ -217,12 +240,6 @@ body.reviews-page,
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.6s;
-}
-
-.review-card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .review-card__header {
@@ -318,28 +335,6 @@ body.reviews-page,
 
 .footer__subtitle {
   text-align: center;
-}
-
-.footer__form-input,
-.footer__form-submit {
-  border-radius: 20px;
-  border: none;
-}
-
-.footer__form-input {
-  width: 250px;
-  padding: 3px 10px;
-  outline: none;
-}
-
-.footer__form-submit {
-  padding: 4px 8px;
-  cursor: pointer;
-  transition: background-color 0.6s;
-}
-
-.footer__form-submit:hover {
-  background-color: #2e3536;
 }
 
 .footer__copyright-container {
@@ -456,6 +451,12 @@ body.reviews-page,
 
   .review-card {
     width: 400px;
+    transition: all 0.6s;
+  }
+
+  .review-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .review-card__header {

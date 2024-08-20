@@ -1,44 +1,55 @@
 {
   "tab": {
-    "about": "About - Exclusive BA",
+    "about": "About Us - Exclusive BA",
     "contact": "Contact - Exclusive BA",
     "reviews": "Reviews - Exclusive BA"
   },
   "header": {
-    "title": "Customized Tours",
-    "subtitle": "Discover Buenos Aires on your terms!",
-    "description": "The best way to explore Argentina's capital",
-    "button": "Ask for a Tour"
+    "title": "Personalized Tours",
+    "subtitle": "Discover Buenos Aires Your Way!",
+    "description": "The best way to explore the Argentine capital",
+    "button": "Request a Tour"
   },
   "links": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "tours": "Tours",
     "contact": "Contact",
     "reviews": "Reviews"
   },
   "index": {
     "main": {
-      "title": "Tours",
-      "tours": [
-        {
-          "title": "Half-Day Tour"
-        },
-        {
-          "title": "Full-Day Tour"
-        }
-      ]
+      "title": "Request a Tour",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Ex: Abel Ferreira",
+        "emailLabel": "Email",
+        "peopleLabel": "Number of People",
+        "peopleSelect": [
+          "Select an option",
+          "1 person",
+          "2 people",
+          "3 people",
+          "4 people",
+          "5 people"
+        ],
+        "hotelLabel": "Hotel Accommodation",
+        "tourDateLabel": "Tour Date",
+        "messageLabel": "Tour Details",
+        "messageDescription": "",
+        "submitButton": "Send Request"
+      }
     }
   },
   "about": {
     "main": {
       "title": "About Us",
-      "description": "Welcome to Exclusive BA, where we transform every visit to Buenos Aires into a unique and personalized adventure. Our mission is to offer you customized tours that adapt to your interests and preferences, allowing you to discover the city like a true local. \n\nPersonalized Itineraries: Whether you are passionate about history, art, gastronomy, nightlife or hidden corners, we design a tour that reflects your tastes and desires. \n\nExpert Guides: Our local guides are not only knowledgeable but also passionate about Buenos Aires. They will share tips and stories that you will not find in any tourist guide. \n\nFlexibility and Comfort: We adapt our tours to your pace and schedule, ensuring a comfortable and stress-free experience. \n\nPersonalized Attention: From the moment you contact us until the end of your tour, we offer you exceptional service with accompaniment on visits and attention to detail, ensuring that your visit is perfect."
+      "description": "Welcome to Exclusive BA, where we turn every visit to Buenos Aires into a unique and personalized adventure. Our mission is to offer you customized tours that match your interests and preferences, allowing you to discover the city like a true local. \n\nPersonalized Itineraries: Whether you're passionate about history, art, gastronomy, nightlife, or hidden gems, we design a tour that reflects your tastes and desires. \n\nExpert Guides: Our local guides are not only knowledgeable but also passionate about Buenos Aires. They will share tips and stories you won't find in any guidebook. \n\nFlexibility and Comfort: We adapt our tours to your pace and schedule, ensuring a comfortable and stress-free experience. \n\nPersonalized Attention: From the moment you contact us until the end of your tour, we provide exceptional service with guidance during visits and attention to detail, ensuring your visit is perfect."
     }
   },
   "reviews": {
     "main": {
-      "title": "Passenger Reviews"
+      "title": "Traveler Reviews"
     }
   },
   "footer": {
@@ -53,9 +64,9 @@
     },
     "questions": {
       "title": "Questions",
-      "subtitle": "Subscribe to stay updated on the latest news!",
+      "subtitle": "Subscribe to not miss any news!",
       "submit": {
-        "button": "Submit"
+        "button": "Send"
       }
     },
     "copyright": "© {year} Exclusive BA. All rights reserved."

@@ -1,44 +1,55 @@
 {
   "tab": {
-    "about": "Sobre - Exclusive BA",
+    "about": "Sobre Nós - Exclusive BA",
     "contact": "Contato - Exclusive BA",
     "reviews": "Avaliações - Exclusive BA"
   },
   "header": {
-    "title": "Passeios Personalizados",
-    "subtitle": "Descubra Buenos Aires do seu jeito!",
-    "description": "A melhor maneira de explorar a capital da Argentina",
-    "button": "Peça um Tour"
+    "title": "Tours Personalizados",
+    "subtitle": "Descubra Buenos Aires do Seu Jeito!",
+    "description": "A melhor maneira de explorar a capital argentina",
+    "button": "Solicitar um Tour"
   },
   "links": {
     "home": "Início",
-    "about": "Sobre nós",
-    "tours": "Passeios",
+    "about": "Sobre Nós",
+    "tours": "Tours",
     "contact": "Contato",
     "reviews": "Avaliações"
   },
   "index": {
     "main": {
-      "title": "Passeios",
-      "tours": [
-        {
-          "title": "Passeio de meio dia"
-        },
-        {
-          "title": "Passeio de dia inteiro"
-        }
-      ]
-    }
-  },
-  "reviews": {
-    "main": {
-      "title": "Comentários de Passageiros"
+      "title": "Solicitar um Tour",
+      "form": {
+        "nameLabel": "Nome",
+        "namePlaceholder": "Ex: Abel Ferreira",
+        "emailLabel": "Email",
+        "peopleLabel": "Número de Pessoas",
+        "peopleSelect": [
+          "Selecione uma opção",
+          "1 pessoa",
+          "2 pessoas",
+          "3 pessoas",
+          "4 pessoas",
+          "5 pessoas"
+        ],
+        "hotelLabel": "Hotel de Hospedagem",
+        "tourDateLabel": "Data do Tour",
+        "messageLabel": "Detalhes do Tour",
+        "messageDescription": "",
+        "submitButton": "Enviar Solicitação"
+      }
     }
   },
   "about": {
     "main": {
       "title": "Sobre Nós",
-      "description": "Bem-vindos à Exclusive BA, onde transformamos cada visita a Buenos Aires em uma aventura única e personalizada. Nossa missão é oferecer tours personalizados que se adaptem aos seus interesses e preferências, permitindo que você descubra a cidade como um verdadeiro portenho. \n\nRoteiros Personalizados: Seja que você seja apaixonado por história, arte, gastronomia, vida noturna ou cantos escondidos, projetamos um tour que reflita seus gostos e desejos. \n\nGuias Experientes: Nossos guias locais não são apenas conhecedores, mas também apaixonados por Buenos Aires. Eles compartilharão dicas e histórias que você não encontrará em nenhum guia turístico. \n\nFlexibilidade e Conforto: Adaptamos nossos tours ao seu ritmo e horário, garantindo uma experiência confortável e sem estresse. \n\nAtendimento Personalizado: Desde o momento em que você entra em contato conosco até o final do seu tour, oferecemos um serviço excepcional com acompanhamento nas visitas e atenção aos detalhes, garantindo que sua visita seja perfeita."
+      "description": "Bem-vindo à Exclusive BA, onde transformamos cada visita a Buenos Aires em uma aventura única e personalizada. Nossa missão é oferecer tours personalizados que se adaptem aos seus interesses e preferências, permitindo que você descubra a cidade como um verdadeiro portenho. \n\nRoteiros Personalizados: Seja você apaixonado por história, arte, gastronomia, vida noturna ou locais ocultos, nós projetamos um tour que reflita seus gostos e desejos. \n\nGuias Especialistas: Nossos guias locais não são apenas conhecedores, mas também apaixonados por Buenos Aires. Eles compartilharão dicas e histórias que você não encontrará em nenhum guia turístico. \n\nFlexibilidade e Conforto: Adaptamos nossos tours ao seu ritmo e horário, garantindo uma experiência confortável e sem estresse. \n\nAtenção Personalizada: Desde o momento em que você nos contata até o final do seu tour, oferecemos um serviço excepcional com acompanhamento durante as visitas e atenção aos detalhes, garantindo que sua visita seja perfeita."
+    }
+  },
+  "reviews": {
+    "main": {
+      "title": "Avaliações dos Viajantes"
     }
   },
   "footer": {
@@ -58,6 +69,6 @@
         "button": "Enviar"
       }
     },
-    "copyright": "© {year} Exclusive BA. Todos os direitos reservados."
+    "copyright": "© {year} Exclusive BA. Todos os direitos reservados"
   }
 }
