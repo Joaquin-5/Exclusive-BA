@@ -1,6 +1,6 @@
 # Exclusive BA
 
-## Página web de la empresa de tours personalizados por la ciudad de Buenos Aires Exclusive BA.
+## Página web de la empresa de tours personalizados por la ciudad de Buenos Aires, Exclusive BA.
 
 ## Tabla de contenidos
 
@@ -37,13 +37,16 @@ Exclusive-BA/
 │   └── reset.css
 │   └── lang-selector.css
 ├── data/
-│   ├── reviews.json
+│   ├── reviews_en.json
+│   ├── reviews_es.json
+│   ├── reviews_pt.json
 ├── img/
 │   └── exclusivebalogowithoutbg.jpg
 │   └── exclusivebalogowithbg.jpeg
 │   └── obelisco.jpg
 ├── js/
 │   └── main.js
+│   └── formHandler.js
 ├── translations/
 │   └── translations_en.json
 │   └── translations_es.json
