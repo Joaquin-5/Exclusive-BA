@@ -77,10 +77,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const loadReviews = async (lang) => {
+    try {
+      const response = await fetch(`/data/reviews_${lang}.json`);
+      const reviews = await response.json();
+
+      displayReviews(reviews);
+    } catch (error) {
+      console.error("Error loading reviews:", error);
+    }
+  };
+
   const handleLanguageChange = (lang) => {
     localStorage.setItem("selectedLang", lang);
     loadTranslations(lang);
     updateSelectors(lang);
+    loadReviews(lang);
   };
 
   const updateSelectors = (lang) => {
@@ -103,42 +115,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const persistedLang = localStorage.getItem("selectedLang") || "es";
   handleLanguageChange(persistedLang);
 
-  if (document.URL.includes("resenas.html")) {
-    fetch("/data/reviews.json")
-      .then((response) => response.json())
-      .then((reviews) => {
-        reviews.forEach((review) => {
-          let starsHTML = "";
-          for (let i = 0; i < 5; i++) {
-            starsHTML +=
-              i < review.stars
-                ? '<i class="fa fa-star checked"></i>'
-                : '<i class="fa fa-star"></i>';
-          }
+  const displayReviews = (reviews) => {
+    if (!reviewsContainer) return;
+    reviewsContainer.innerHTML = ""; // Limpiar las reseñas actuales
 
-          const reviewHTML = `
-            <div class="review-card">
-              <div class="review-card__header">
-                ${
-                  review.image
-                    ? `<img src="${review.image}" alt="${review.name}" class="review-card__image" />`
-                    : `<img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="${review.name}" class="review-card__image" />`
-                }
-                <div class="review-card__details">
-                  <h2 class="review-card__name">${review.name}</h2>
-                  <div class="review-card__stars">${starsHTML}</div>
-                </div>
-              </div>
-              <hr class="review-card__separator" />
-              <div class="review-card__content">
-                <p>${review.description}</p>
-              </div>
+    reviews.forEach((review) => {
+      let starsHTML = "";
+      for (let i = 0; i < 5; i++) {
+        starsHTML +=
+          i < review.stars
+            ? '<i class="fa fa-star checked"></i>'
+            : '<i class="fa fa-star"></i>';
+      }
+
+      const reviewHTML = `
+        <div class="review-card">
+          <div class="review-card__header">
+            ${
+              review.image
+                ? `<img src="${review.image}" alt="${review.name}" class="review-card__image" />`
+                : `<img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="${review.name}" class="review-card__image" />`
+            }
+            <div class="review-card__details">
+              <h2 class="review-card__name">${review.name}</h2>
+              <div class="review-card__stars">${starsHTML}</div>
             </div>
-          `;
-          reviewsContainer.insertAdjacentHTML("beforeend", reviewHTML);
-        });
-      })
-      .catch((error) => console.error("Error fetching reviews:", error));
+          </div>
+          <hr class="review-card__separator" />
+          <div class="review-card__content">
+            <p data-translate="description">"${review.description}"</p>
+          </div>
+        </div>
+      `;
+      reviewsContainer.insertAdjacentHTML("beforeend", reviewHTML);
+    });
+  };
+
+  if (document.URL.includes("resenas.html")) {
+    loadReviews(persistedLang);
   }
 
   const updateCopyright = (copyrightText) => {

@@ -1,0 +1,26 @@
+[
+  {
+    "image": "../img/imagenresena1.jpg",
+    "name": "Carlos M.",
+    "stars": 5,
+    "description": "Fizemos o tour e foi incrível. Cada parada foi cuidadosamente escolhida e a comida foi fenomenal. O melhor foi a flexibilidade para adaptar o passeio aos nossos gostos. Obrigado por uma tarde inesquecível!"
+  },
+  {
+    "image": "../img/imagenresena2.jpeg",
+    "name": "Federico S.",
+    "stars": 5,
+    "description": "Se você quer uma experiência autêntica em Buenos Aires, este é o tour que você deve fazer. Desde a comunicação inicial até o fim do passeio, tudo foi perfeito. Sentimos como se fôssemos locais explorando a cidade com um amigo. Com certeza voltaremos!"
+  },
+  {
+    "image": null,
+    "name": "Victoria H.",
+    "stars": 5,
+    "description": "Fizemos um tour privado e foi a melhor decisão. Nosso guia dedicou tempo para conhecer nossos interesses e adaptar o passeio de acordo. Visitamos lugares históricos, desfrutamos da gastronomia local e aprendemos muito sobre a cultura portenha. Altamente recomendável!"
+  },
+  {
+    "image": null,
+    "name": "Javier P.",
+    "stars": 5,
+    "description": "Nunca pensei que poderia conhecer tanto de Buenos Aires em tão pouco tempo. A atenção personalizada e a paixão do nosso guia tornaram este passeio muito especial. Recomendo muito a Exclusive BA para quem visita a cidade."
+  }
+]

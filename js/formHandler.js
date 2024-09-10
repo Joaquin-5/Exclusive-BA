@@ -4,15 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const formData = new FormData(form);
-    const data = {
+    const formData = Object.fromEntries(
+      new FormData(event.target)
+    );
+
+    console.log(formData);
+    
+
+    /* const data = {
       name: formData.get("name"),
       email: formData.get("email"),
       numPeople: formData.get("numPeople"),
       tourDate: formData.get("tourDate"),
       hotel: formData.get("hotel"),
       message: formData.get("message"),
-    };
+    }; 
 
     console.log("Name:", data.name);
     console.log("Email:", data.email);
@@ -36,6 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch((error) => {
         console.error("Error al enviar el email:", error);
-      });
-  });
+      }); */
+  }); 
 });

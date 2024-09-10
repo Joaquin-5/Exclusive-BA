@@ -259,124 +259,114 @@
         Pedir un Tour
       </h2>
       <form class="form" id="tourRequestForm">
-        <div class="form__grid">
-          <div class="form__group">
-            <label
-              class="form__label"
-              for="name"
-              data-translate="index.main.form.nameLabel"
-              >Nombre:</label
+        <div class="form__group">
+          <label
+            class="form__label"
+            for="name"
+            data-translate="index.main.form.nameLabel"
+            >Nombre:</label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ex: Abel Ferreira"
+            data-translate="index.main.form.namePlaceholder"
+            autocomplete="given-name"
+          />
+        </div>
+        <div class="form__group">
+          <label
+            class="form__label"
+            for="email"
+            data-translate="index.main.form.emailLabel"
+            >Email:</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: abelferreira@gmail.com"
+            data-translate="index.main.form.emailPlaceholder"
+            autocomplete="username"
+          />
+        </div>
+        <div class="form__group">
+          <label
+            class="form__label"
+            for="numPeople"
+            data-translate="index.main.form.peopleLabel"
+            >Cantidad de Personas:</label
+          >
+          <select class="form__input" id="numPeople" name="numPeople">
+            <option
+              value=""
+              disabled
+              selected
+              data-translate="index.main.form.peopleSelect.0"
             >
-            <input
-              class="form__input"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Ex: Abel Ferreira"
-              data-translate="index.main.form.namePlaceholder"
-              required
-            />
-          </div>
-          <div class="form__group">
-            <label
-              class="form__label"
-              for="email"
-              data-translate="index.main.form.emailLabel"
-              >Email:</label
-            >
-            <input
-              class="form__input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Ex: abelferreira@gmail.com"
-              data-translate="index.main.form.emailPlaceholder"
-              required
-            />
-          </div>
-          <div class="form__group">
-            <label
-              class="form__label"
-              for="numPeople"
-              data-translate="index.main.form.peopleLabel"
-              >Cantidad de Personas:</label
-            >
-            <select
-              class="form__input"
-              id="numPeople"
-              name="numPeople"
-              required
-            >
-              <option
-                value=""
-                disabled
-                selected
-                data-translate="index.main.form.peopleSelect.0"
-              >
-                Selecciona una opción
-              </option>
-              <option value="1" data-translate="index.main.form.peopleSelect.1">
-                1 persona
-              </option>
-              <option value="2" data-translate="index.main.form.peopleSelect.2">
-                2 personas
-              </option>
-              <option value="3" data-translate="index.main.form.peopleSelect.3">
-                3 personas
-              </option>
-              <option value="4" data-translate="index.main.form.peopleSelect.4">
-                4 personas
-              </option>
-              <option value="5" data-translate="index.main.form.peopleSelect.5">
-                5 personas
-              </option>
-            </select>
-          </div>
-          <div class="form__group">
-            <label
-              class="form__label"
-              for="hotel"
-              data-translate="index.main.form.hotelLabel"
-              >Hotel de Hospedaje:</label
-            >
-            <input
-              class="form__input"
-              type="text"
-              id="hotel"
-              name="hotel"
-              placeholder="Ex: Hotel Plaza"
-              required
-            />
-          </div>
-          <div class="form__group form__group--fullwidth">
-            <label
-              class="form__label"
-              for="tourDate"
-              data-translate="index.main.form.tourDateLabel"
-              >Fecha del Tour:</label
-            >
-            <input
-              class="form__input"
-              type="date"
-              id="tourDate"
-              name="tourDate"
-              required
-            />
-          </div>
-          <div class="form__group form__group--fullwidth">
-            <label
-              class="form__label"
-              for="message"
-              data-translate="index.main.form.messageLabel"
-              >Detalle del tour:</label
-            >
-            <textarea
-              class="form__textarea"
-              id="message"
-              name="message"
-              required
-            ></textarea>
-          </div>
+              Selecciona una opción
+            </option>
+            <option value="1" data-translate="index.main.form.peopleSelect.1">
+              1 persona
+            </option>
+            <option value="2" data-translate="index.main.form.peopleSelect.2">
+              2 personas
+            </option>
+            <option value="3" data-translate="index.main.form.peopleSelect.3">
+              3 personas
+            </option>
+            <option value="4" data-translate="index.main.form.peopleSelect.4">
+              4 personas
+            </option>
+            <option value="5" data-translate="index.main.form.peopleSelect.5">
+              5 personas
+            </option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label
+            class="form__label"
+            for="tourDate"
+            data-translate="index.main.form.tourDateLabel"
+            >Fecha del Tour:</label
+          >
+          <input
+            class="form__input"
+            type="date"
+            id="tourDate"
+            name="tourDate"
+          />
+        </div>
+        <div class="form__group form__group--fullwidth">
+          <label
+            class="form__label"
+            for="hotel"
+            data-translate="index.main.form.hotelLabel"
+            >Hotel de Hospedaje:</label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="hotel"
+            name="hotel"
+            placeholder="Ex: Hotel Plaza"
+          />
+        </div>
+        <div class="form__group form__group--fullwidth">
+          <label
+            class="form__label"
+            for="message"
+            data-translate="index.main.form.messageLabel"
+            >Detalle del tour:</label
+          >
+          <textarea
+            class="form__textarea"
+            id="message"
+            name="message"
+          ></textarea>
         </div>
         <button
           class="form__submit"
