@@ -126,7 +126,6 @@ body.reviews-page,
 }
 
 .header__button {
-  display: inline-block;
   margin: 20px auto;
   padding: 15px 40px;
   background-color: #84ceff;
@@ -180,7 +179,7 @@ body.reviews-page,
 .form__textarea {
   max-width: 202px;
   min-width: 202px;
-  min-height: 40px;
+  min-height: 60px;
   padding: 10px;
 }
 
@@ -188,9 +187,10 @@ body.reviews-page,
   padding: 15px 40px;
   border: none;
   background-color: #84ceff;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
   border-radius: 10px;
+  font-weight: 600;
 }
 
 /* Estilos del "nosotros.html" */
@@ -440,12 +440,13 @@ body.reviews-page,
   }
 
   .form__submit {
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
     grid-column: 2 / 3;
   }
 
   .form__submit:hover {
     background-color: #4e7dbe;
+    color: #ffffff;
   }
 
   /* Estilos del nosotros.html */
