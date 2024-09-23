@@ -37,7 +37,32 @@
         "tourDateLabel": "Data do Tour",
         "messageLabel": "Detalhes do Tour",
         "messageDescription": "",
-        "submitButton": "Enviar Solicitação"
+        "submitButton": "Enviar Solicitação",
+        "errors": {
+          "nombre": {
+            "required": "O campo nome e sobrenome é obrigatório.",
+            "invalid": "Por favor, insira um nome e sobrenome válidos."
+          },
+          "email": {
+            "required": "O campo de email é obrigatório.",
+            "invalid": "Por favor, insira um email válido."
+          },
+          "cantidadPersonas": {
+            "required": "Por favor, selecione o número de pessoas."
+          },
+          "fechaTour": {
+            "required": "Por favor, selecione uma data.",
+            "invalid": "A data não pode ser anterior ao dia de hoje."
+          },
+          "hotel": {
+            "required": "Por favor, insira o nome do hotel.",
+            "invalid": "O nome do hotel não é válido."
+          },
+          "detalleTour": {
+            "required": "O campo de detalhes do tour é obrigatório.",
+            "minLength": "Os detalhes devem ter pelo menos {minLength} caracteres."
+          }
+        }
       }
     }
   },

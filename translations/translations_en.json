@@ -37,7 +37,32 @@
         "tourDateLabel": "Tour Date",
         "messageLabel": "Tour Details",
         "messageDescription": "",
-        "submitButton": "Send Request"
+        "submitButton": "Send Request",
+        "errors": {
+          "nombre": {
+            "required": "The full name field is required.",
+            "invalid": "Please enter a valid full name."
+          },
+          "email": {
+            "required": "The email field is required.",
+            "invalid": "Please enter a valid email address."
+          },
+          "cantidadPersonas": {
+            "required": "Please select the number of people."
+          },
+          "fechaTour": {
+            "required": "Please select a date.",
+            "invalid": "The date cannot be earlier than today."
+          },
+          "hotel": {
+            "required": "Please enter the name of the hotel.",
+            "invalid": "The hotel name is not valid."
+          },
+          "detalleTour": {
+            "required": "The tour details field is required.",
+            "minLength": "The details must be at least {minLength} characters long."
+          }
+        }
       }
     }
   },
