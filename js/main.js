@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loadTranslations = async (lang) => {
     try {
-      const response = await fetch(`./translations/translations_${lang}.json`);
+      const response =  await fetch(`/translations/translations_${lang}.json`);
       const translations = await response.json();
       applyTranslations(translations);
       updateCopyright(translations.footer.copyright);

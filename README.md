@@ -47,6 +47,10 @@ Exclusive-BA/
 ├── js/
 │   └── main.js
 │   └── formHandler.js
+├── pages/
+│    ├── nosotros.html
+│    └── reseñas.html
+│    └── contacto.html
 ├── translations/
 │   └── translations_en.json
 │   └── translations_es.json

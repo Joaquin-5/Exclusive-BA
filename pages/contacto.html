@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-translate="tab.reviews">Reseñas - Exclusive BA</title>
-    <link rel="icon" href="./img/exclusivebalogowithbg.jpeg" />
+    <title data-translate="tab.contact">Contacto - Exclusive BA</title>
+    <link rel="icon" href="../img/exclusivebalogowithbg.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/lang-selector.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/lang-selector.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,15 +23,17 @@
     />
   </head>
 
-  <body class="reviews-page">
+  <body>
+    <h1>Contacto</h1>
+
     <!-- Navegación: Logo, hipervínculos, seleccionador de idiomas -->
     <header class="header">
       <!-- Desktop Navigation -->
       <div class="header__nav header__nav--desktop">
         <div class="header__logo">
-          <a href="index.html">
+          <a href="../index.html">
             <img
-              src="./img/exclusivebalogowithoutbg.png"
+              src="../img/exclusivebalogowithoutbg.png"
               alt="Logo Exclusive BA"
               class="header__logo-image"
             />
@@ -42,7 +44,7 @@
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="index.html"
+                href="../index.html"
                 data-translate="links.home"
                 >Inicio</a
               >
@@ -50,7 +52,7 @@
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="nosotros.html"
+                href="./nosotros.html"
                 data-translate="links.about"
                 >Nosotros</a
               >
@@ -74,7 +76,7 @@
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="resenas.html"
+                href="./resenas.html"
                 data-translate="links.reviews"
                 >Reseñas</a
               >
@@ -131,9 +133,9 @@
       <div class="header__nav header__nav--mobile">
         <div class="header__logo-and-toggle">
           <div class="header__logo">
-            <a href="index.html">
+            <a href="../index.html">
               <img
-                src="./img/exclusivebalogowithoutbg.png"
+                src="../img/exclusivebalogowithoutbg.png"
                 alt="Logo Exclusive BA"
                 class="header__logo-image"
               />
@@ -148,7 +150,7 @@
             <li class="header__nav-item">
               <a
                 class="header__nav-link"
-                href="index.html"
+                href="../index.html"
                 data-translate="links.home"
                 >Inicio</a
               >
@@ -234,13 +236,8 @@
       </div>
     </header>
 
-    <!-- Contenido Principal de la Página: Reseñas con imágen y estrellas -->
-    <main class="main reviews-main">
-      <h1 class="reviews-main__title" data-translate="reviews.main.title">
-        Reseñas de Pasajeros
-      </h1>
-      <section class="reviews-section"></section>
-    </main>
+    <!-- Contenido Principal de la Página: Formulario de contacto -->
+    <main class="main"></main>
 
     <!-- categorias, contacto, preguntas -->
     <footer class="footer" id="contact">
@@ -339,6 +336,6 @@
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

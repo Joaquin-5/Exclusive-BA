@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch(`./translations/translations_${lang}.json`);
       const data = await response.json();
       translations = data.index.main.form.errors;
+      console.log("Traducciones cargadas:", translations); // Verificar si se cargan correctamente
     } catch (error) {
       console.error("Error loading error messages:", error);
     }
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
           errorMessageContainer.querySelector(".form__error-text");
         const label = form.querySelector(`label[for="${field.id}"]`);
 
+        // Limpiar cualquier estilo de error y mensaje anterior
         label.classList.remove("form__label--error");
         field.classList.remove("form__input--error");
         errorTextSpan.textContent = ""; // Limpiar el mensaje de error
@@ -45,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "#tourRequestForm input, #tourRequestForm textarea, #tourRequestForm select"
       )
       .forEach((field) => {
-        validateField(field); // Válida cada campo para actualizar el mensaje
+        validateField(field); // Validar cada campo para actualizar el mensaje
       });
   };
 
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Obtener el label correspondiente
     const label = form.querySelector(`label[for="${field.id}"]`);
 
+    // Validaciones específicas de cada campo
     switch (fieldName) {
       case "name":
         if (field.value.trim() === "") {
@@ -179,15 +182,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cargar mensajes de error en el idioma seleccionado
   const persistedLang = localStorage.getItem("selectedLang") || "es";
-  loadErrorMessages(persistedLang);
+  loadErrorMessages(persistedLang).then(updateErrorMessages); // Asegúrate de actualizar después de cargar
 
   // Ejemplo de un evento para cambiar el idioma
   document
     .getElementById("languageSelector")
-    .addEventListener("change", (event) => {
+    .addEventListener("change", async (event) => {
       const selectedLang = event.target.value; // Suponiendo que tienes un select con este id
       localStorage.setItem("selectedLang", selectedLang);
-      loadErrorMessages(selectedLang).then(updateErrorMessages); // Cargar y actualizar los mensajes de error
+      await loadErrorMessages(selectedLang); // Espera a que se carguen las traducciones
+      updateErrorMessages(); // Actualiza los mensajes de error después de cambiar el idioma
     });
 });
 
