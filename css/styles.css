@@ -458,7 +458,7 @@ body.reviews-page,
 
   .form {
     grid-template-columns: repeat(2, 1fr);
-    width: 573px;
+    width: 700px;
   }
 
   .form__group--fullwidth {
