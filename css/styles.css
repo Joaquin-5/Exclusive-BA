@@ -203,12 +203,12 @@ body.reviews-page,
 }
 
 /* Estilos para los errores del formulario: label, borde del input y mensaje de errores */
-.form__input--error {
-  border: 2px solid #ff0000;
-}
-
 .form__label--error {
   color: #ff0000;
+}
+
+.form__input--error {
+  border: 1.2px solid #ff0000;
 }
 
 .form__error-message {
@@ -218,6 +218,9 @@ body.reviews-page,
   gap: 8px;
 }
 
+.form__error-message--hidden {
+  display: none;
+}
 /* Estilos del "nosotros.html" */
 .about-main {
   color: #ffffff;
