@@ -55,9 +55,6 @@ Exclusive-BA/
 │   └── translations_en.json
 │   └── translations_es.json
 │   └── translations_pt.json
-├── contacto.html
 ├── index.html
-├── nosotros.html
 ├── README.md
-└── resenas.html
 ```
