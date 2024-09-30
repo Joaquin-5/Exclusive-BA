@@ -156,6 +156,7 @@ body.reviews-page,
 .form {
   display: grid;
   gap: 16px;
+  width: 280px;
 }
 
 .form__group {
@@ -457,6 +458,7 @@ body.reviews-page,
 
   .form {
     grid-template-columns: repeat(2, 1fr);
+    width: 573px;
   }
 
   .form__group--fullwidth {
