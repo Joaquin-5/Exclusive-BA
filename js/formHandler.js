@@ -1,8 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("tourRequestForm");
+  const tourDateInput = document.getElementById("tourDate");
   const submitButton = form.querySelector("button[type='submit']");
   let translations;
   const touchedFields = new Set(); // Almacena los campos en los que se ha hecho foco
+
+  // Función para obtener la fecha con 7 días de margen a partir de hoy
+  const getMinDate = () => {
+    const today = new Date();
+    today.setDate(today.getDate() + 7); // Sumar 7 días al día actual
+    return today.toISOString().split("T")[0]; // Formatear como YYYY-MM-DD
+  };
+
+  // Establecer el atributo 'min' del campo de fecha
+  tourDateInput.setAttribute("min", getMinDate());
 
   // Cargar mensajes de error ocultos al inicio
   document.querySelectorAll(".form__error-message").forEach((div) => {
@@ -188,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("languageSelector")
     .addEventListener("change", async (event) => {
-      const selectedLang = event.target.value; // Suponiendo que tienes un select con este id
+      const selectedLang = event.target.value;
       localStorage.setItem("selectedLang", selectedLang);
       await loadErrorMessages(selectedLang); // Espera a que se carguen las traducciones
       updateErrorMessages(); // Actualiza los mensajes de error después de cambiar el idioma

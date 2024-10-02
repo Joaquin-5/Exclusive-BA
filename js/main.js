@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const htmlElement = document.documentElement;
-  const menuContainer = document.querySelector(".header__menu-container");
   const hamburguerMenu = document.querySelector(".header__menu-toggle");
+  const menuContainer = document.querySelector(".header__menu-container");
   const languageSelectors = document.querySelectorAll(
     ".custom-select__wrapper"
   );
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle menú hamburguesa
   hamburguerMenu.addEventListener("click", () => {
+    hamburguerMenu.classList.toggle("header__menu-toggle--active");
     menuContainer.classList.toggle("header__menu-container--visible");
     menuContainer.classList.toggle("header__menu-container--hidden");
   });
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loadTranslations = async (lang) => {
     try {
-      const response =  await fetch(`/translations/translations_${lang}.json`);
+      const response = await fetch(`/translations/translations_${lang}.json`);
       const translations = await response.json();
       applyTranslations(translations);
       updateCopyright(translations.footer.copyright);
