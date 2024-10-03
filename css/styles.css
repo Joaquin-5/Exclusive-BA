@@ -537,6 +537,8 @@ body.reviews-page,
   .reviews-section {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
   }
 
